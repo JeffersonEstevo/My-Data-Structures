@@ -24,7 +24,6 @@ Third Pass:
 ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
 """
 
-
 def bubbleSort(arr):
     n = len(arr)
     for i in range(n-1):
@@ -49,6 +48,8 @@ def optimizedBubbleSort(arr):
 # Worst and Average Case Time Complexity: O(n*n). 
 # Best Case Time Complexity: O(n).
 
+
+#example
 a = [1,2,4,5,8]
 print(*bubbleSort(a))
 print(*optimizedBubbleSort(a))

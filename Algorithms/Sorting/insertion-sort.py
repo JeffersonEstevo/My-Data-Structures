@@ -13,6 +13,7 @@ The algorithm sorts the input numbers in place: it rearranges the numbers within
 with at most a constant number of them stored outside the array at any time. The input array A
 contains the sorted output sequence when the INSERTION-SORT procedure is finished.
 
+
 Time Complexity:
 Best Case: O(n)
 Average Case: O(n*n)

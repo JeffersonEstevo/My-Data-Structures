@@ -24,7 +24,6 @@ Best Case: O(n*n)
 Average Case: O(n*n)
 Worst Case: O(n*n)
 """
-
 class selection_sort:
     def selectionSort(self,arr):
         for i in range(len(arr)-1):

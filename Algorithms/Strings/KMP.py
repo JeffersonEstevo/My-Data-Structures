@@ -42,4 +42,3 @@ def KMP(text,pattern):
 
 print(KMP("acacabacacabacacac","ccacac")) # return False
 print(KMP("acacabacacabacacac","bacacac")) # return True
-

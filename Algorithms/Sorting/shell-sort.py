@@ -25,4 +25,3 @@ def shell_sort(arr):
         
 arr = [2, 6, 1, 3, 4, 10]
 shell_sort(arr) 
-

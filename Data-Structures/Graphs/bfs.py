@@ -16,6 +16,7 @@ As the name BFS suggests, you are required to traverse the graph breadthwise as 
 - First move horizontally and visit all the nodes of the current layer
 - Move to the next layer
 """
+
 def bfs(graph, root):
     visited, queue = set(), [root]
     visited.add(root)

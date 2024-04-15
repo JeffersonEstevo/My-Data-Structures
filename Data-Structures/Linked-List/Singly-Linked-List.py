@@ -2,6 +2,7 @@
 ------------------------ Singly Linked List -------------------------
 """
 
+
 class node:
 	def __init__(self, data = None):
 		self.data = data

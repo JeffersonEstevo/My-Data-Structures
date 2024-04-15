@@ -75,3 +75,4 @@ class singly_linked_list:
 				new_node.next = cur
 				return "Node Added"
 			idx += 1
+

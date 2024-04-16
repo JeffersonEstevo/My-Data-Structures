@@ -113,3 +113,4 @@ print(x.heapList) # Print [0, 3, 6, 5, 9]
 x.insert(2)
 print(x.heapList) # Print [0, 2, 3, 5, 9, 6]
 print(x.getMin()) # Print 2
+

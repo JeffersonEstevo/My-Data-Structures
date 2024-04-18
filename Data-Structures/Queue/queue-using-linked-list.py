@@ -37,4 +37,3 @@ print(x.dequeue()) # Deleting the first element of the queue.
 x.display() # 2
 print(x.dequeue()) # 2
 print(x.dequeue()) # None(because queue is already empty)
-

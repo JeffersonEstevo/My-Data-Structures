@@ -74,3 +74,4 @@ print("----------------")
 bTree.printTree("in") # 3 4 5 6 8 10
 print("----------------")
 bTree.printTree("post") # 3 5 4 10 8 6
+

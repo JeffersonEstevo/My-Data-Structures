@@ -15,6 +15,7 @@ alphabet and is the root of the Trie.
 So, the insertion of any string into a Trie starts from the root node. All prefixes of length one are direct children of the root node. 
 In addition, all prefixes of length 2 become children of the nodes existing at level one.
 """
+
 class Trie:
 
     def __init__(self):

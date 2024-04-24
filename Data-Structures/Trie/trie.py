@@ -58,3 +58,4 @@ print(obj.search("hi")) # return True
 print(obj.startsWith("he")) # return True
 print(obj.startsWith("heyy")) # return False
 
+

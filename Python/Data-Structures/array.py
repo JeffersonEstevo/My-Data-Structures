@@ -28,3 +28,4 @@ class myArray:
     def reverse(self):
         self.arr.reverse() # reversing the array
         return self.arr
+

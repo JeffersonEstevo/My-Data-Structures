@@ -18,6 +18,7 @@ int isPossible(vector < int > & A, int pages, int students) {
   if (cnt < students) return true;
   return false;
 }
+
 int books(vector < int > & A, int B) {
   if (B > A.size()) return -1;
   int low = A[0];
@@ -38,6 +39,7 @@ int books(vector < int > & A, int B) {
   }
   return low;
 }
+
 int main() {
   vector<int> A = {12,34,67,90};
   int B = 2;

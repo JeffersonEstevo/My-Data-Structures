@@ -61,6 +61,7 @@ class Solution {
       return ans;
     }
 };
+
 int main() {
   int n = 4; // we are taking 4*4 grid and 4 queens
   Solution obj;

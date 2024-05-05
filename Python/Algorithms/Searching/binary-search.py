@@ -1,3 +1,4 @@
+
 """
 Binary search is the most popular Search algorithm.It is efficient and also one of the most commonly used techniques 
 that is used to solve problems.

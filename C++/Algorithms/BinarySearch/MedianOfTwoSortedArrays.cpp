@@ -36,4 +36,3 @@ int main() {
     <<median(nums1,nums2,m,n);
     return 0;
 }
-

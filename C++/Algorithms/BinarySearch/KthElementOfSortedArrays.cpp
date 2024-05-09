@@ -38,4 +38,3 @@ int main() {
     <<kthelement(array1,array2,m,n,k);
     return 0;
 }
-

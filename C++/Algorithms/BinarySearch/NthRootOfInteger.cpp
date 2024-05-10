@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 double multiply(double number, int n) {
     double ans = 1.0;

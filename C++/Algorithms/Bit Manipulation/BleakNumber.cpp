@@ -9,6 +9,7 @@ x + countSetBits(x) is not equal to n for any non-negative number x.
 #include <iostream>
 
 using namespace std;
+
 int countSetBits(int x)
 {
 	int count = 0;

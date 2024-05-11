@@ -10,18 +10,16 @@ x + countSetBits(x) is not equal to n for any non-negative number x.
 
 using namespace std;
 
-int countSetBits(int x)
-{
+int countSetBits(int x){
 	int count = 0;
-	while (x)
-	{
+	while (x){
 		x &= (x - 1);
 		count++;
 	}
 	return count;
 }
-int main()
-{
+
+int main(){
 	int n, x, y = 1;
 	cout << "Enter a number: ";
 	cin >> n;

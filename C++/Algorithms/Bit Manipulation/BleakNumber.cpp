@@ -23,12 +23,9 @@ int main(){
 	int n, x, y = 1;
 	cout << "Enter a number: ";
 	cin >> n;
-	while (n)
-	{
-		for (x = 1; x < n; x++)
-		{
-			if ((x + countSetBits(x) == n))
-			{
+	while (n){
+		for (x = 1; x < n; x++){
+			if ((x + countSetBits(x) == n)){
 				cout << "No, its not a bleak number.";
 				cout << "\n"
 					 << n << " = " << x << " + countSetBits(" << x << ")";

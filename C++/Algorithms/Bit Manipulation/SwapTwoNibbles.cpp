@@ -1,3 +1,4 @@
+
 /* Swap Two Nibbles
 
 Given a byte, swap the two nibbles in it. For example 100 is be represented as 01100100 in a byte (or 8 bits).

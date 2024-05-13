@@ -5,7 +5,9 @@ The two nibbles are (0110) and (0100). If we swap the two nibbles, we get 010001
 */
 
 #include <iostream>
+
 using namespace std;
+
 int main()
 {
     int swapNibbles(int n);

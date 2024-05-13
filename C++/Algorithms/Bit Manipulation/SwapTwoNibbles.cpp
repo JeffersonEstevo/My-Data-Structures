@@ -8,8 +8,7 @@ The two nibbles are (0110) and (0100). If we swap the two nibbles, we get 010001
 
 using namespace std;
 
-int main()
-{
+int main(){
     int swapNibbles(int n);
     int n, result;
     cout << "Enter a number: ";
@@ -20,7 +19,6 @@ int main()
     return 0;
 }
 
-int swapNibbles(int n)
-{
+int swapNibbles(int n){
     return (((n & 0x0F) << 4) | ((n & 0xF0) >> 4));
 }

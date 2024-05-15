@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
+
 int n;
 
 int queen[20]; // to store the ith queen pos (ith queen pos => col num in which its saved)

@@ -23,6 +23,7 @@ bool check(int row,int col){
     }
     return true;
 }
+
 int rec(int level){
     // here rec means that the the number of ways a queen can be positioned 
     //from this level(row) to last level(nth)

@@ -56,6 +56,7 @@ int rec(int level){
 // return the ans;
     return ans; // no of ways to position remaining queens from cur level/ row
 }
+
 int main(){
     cin>>n; // how many N X N chess board
     memset(queen,-1,sizeof(queen));

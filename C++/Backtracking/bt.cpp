@@ -48,6 +48,7 @@ public:
         for(auto it:result_set)    result.push_back(it);
         return result;        
     }
+
 private:
     void findWords(vector<vector<char>>& board, int x, int y, TrieNode* root, string word, set<string>& result){
         if(x<0||x>=board.size()||y<0||y>=board[0].size() || board[x][y]==' ') return;

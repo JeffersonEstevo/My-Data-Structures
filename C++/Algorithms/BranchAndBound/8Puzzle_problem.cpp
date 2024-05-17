@@ -7,6 +7,7 @@ and one empty space. The objective is to place the numbers on tiles to match fin
 // for N*N -1 puzzle algorithm using Branch and Bound
 // The solution assumes that instance of puzzle is solvable
 #include <bits/stdc++.h>
+
 using namespace std;
 #define N 3
 

@@ -9,6 +9,7 @@ and one empty space. The objective is to place the numbers on tiles to match fin
 #include <bits/stdc++.h>
 
 using namespace std;
+
 #define N 3
 
 // state space tree nodes

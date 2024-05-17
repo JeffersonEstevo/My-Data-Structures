@@ -1,4 +1,3 @@
-
 /*problem statement:Given a 3×3 board with 8 tiles (every tile has one number from 1 to 8)
 and one empty space. The objective is to place the numbers on tiles to match final configuration
  using the empty space. We can slide four adjacent (left, right, above and below) tiles into the
@@ -13,8 +12,7 @@ using namespace std;
 #define N 3
 
 // state space tree nodes
-struct Node
-{
+struct Node{
 	// stores the parent node of the current node
 	// helps in tracing path when the answer is found
 	Node* parent;
@@ -33,10 +31,8 @@ struct Node
 };
 
 // Function to print N x N matrix
-int printMatrix(int mat[N][N])
-{
-	for (int i = 0; i < N; i++)
-	{
+int printMatrix(int mat[N][N]){
+	for (int i = 0; i < N; i++){
 		for (int j = 0; j < N; j++)
 			printf("%d ", mat[i][j]);
 		printf("\n");
@@ -45,8 +41,7 @@ int printMatrix(int mat[N][N])
 
 // Function to allocate a new node
 Node* newNode(int mat[N][N], int x, int y, int newX,
-			int newY, int level, Node* parent)
-{
+			int newY, int level, Node* parent){
 	Node* node = new Node;
 
 	// set pointer for path to root
@@ -77,8 +72,7 @@ int col[] = { 0, -1, 0, 1 };
 
 // Function to calculate the number of misplaced tiles
 // ie. number of non-blank tiles not in their goal position
-int calculateCost(int initial[N][N], int final[N][N])
-{
+int calculateCost(int initial[N][N], int final[N][N]){
 	int count = 0;
 	for (int i = 0; i < N; i++)
 	for (int j = 0; j < N; j++)
@@ -88,14 +82,12 @@ int calculateCost(int initial[N][N], int final[N][N])
 }
 
 // Function to check if (x, y) is a valid matrix cordinate
-int isSafe(int x, int y)
-{
+int isSafe(int x, int y){
 	return (x >= 0 && x < N && y >= 0 && y < N);
 }
 
 // print path from root node to destination node
-void printPath(Node* root)
-{
+void printPath(Node* root){
 	if (root == NULL)
 		return;
 	printPath(root->parent);
@@ -105,10 +97,8 @@ void printPath(Node* root)
 }
 
 // Comparison object to be used to order the heap
-struct comp
-{
-	bool operator()(const Node* lhs, const Node* rhs) const
-	{
+struct comp{
+	bool operator()(const Node* lhs, const Node* rhs) const{
 		return (lhs->cost + lhs->level) > (rhs->cost + rhs->level);
 	}
 };
@@ -117,8 +107,7 @@ struct comp
 // Branch and Bound. x and y are blank tile coordinates
 // in initial state
 void solve(int initial[N][N], int x, int y,
-		int final[N][N])
-{
+		int final[N][N]){
 	// Create a priority queue to store live nodes of
 	// search tree;
 	priority_queue<Node*, std::vector<Node*>, comp> pq;
@@ -133,8 +122,7 @@ void solve(int initial[N][N], int x, int y,
 	// Finds a live node with least cost,
 	// add its childrens to list of live nodes and
 	// finally deletes it from the list.
-	while (!pq.empty())
-	{
+	while (!pq.empty()){
 		// Find a live node with least estimated cost
 		Node* min = pq.top();
 
@@ -143,8 +131,7 @@ void solve(int initial[N][N], int x, int y,
 		pq.pop();
 
 		// if min is an answer node
-		if (min->cost == 0)
-		{
+		if (min->cost == 0){
 			// print the path from root to destination;
 			printPath(min);
 			return;
@@ -152,10 +139,8 @@ void solve(int initial[N][N], int x, int y,
 
 		// do for each child of min
 		// max 4 children for a node
-		for (int i = 0; i < 4; i++)
-		{
-			if (isSafe(min->x + row[i], min->y + col[i]))
-			{
+		for (int i = 0; i < 4; i++){
+			if (isSafe(min->x + row[i], min->y + col[i])){
 				// create a child node and calculate
 				// its cost
 				Node* child = newNode(min->mat, min->x,
@@ -172,8 +157,7 @@ void solve(int initial[N][N], int x, int y,
 }
 
 // Driver code
-int main()
-{
+int main(){
 	// Initial configuration
 	// Value 0 is used for empty space
 	int initial[N][N] =

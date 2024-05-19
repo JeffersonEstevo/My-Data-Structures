@@ -8,6 +8,7 @@ Expected Result: To fill the board using L shaped tiles of size(2x2) with one ce
 #include <bits/stdc++.h> 
 
 using namespace std; 
+
 int grid_size, b=0, a=0, cnt = 0; 
 int arr[256][256]; 
 

@@ -1,4 +1,3 @@
-
 /*
 Title:Tiling Problem using Divide and Conquer algorithm.
 Description: Given a n x n board where n is of form 2^k where k >= 1.The board has one missing cell (of size 1 x 1).

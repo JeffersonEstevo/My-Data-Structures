@@ -12,8 +12,7 @@ int grid_size, b=0, a=0, cnt = 0;
 int arr[256][256]; 
 
 // Placing tile at the specified position 
-void place_tile(int x1, int y1, int x2, int y2, int x3, int y3) 
-{ 
+void place_tile(int x1, int y1, int x2, int y2, int x3, int y3) { 
 	cnt++; 
 	arr[x1][y1] = cnt; 
 	arr[x2][y2] = cnt; 
@@ -21,19 +20,14 @@ void place_tile(int x1, int y1, int x2, int y2, int x3, int y3)
 } 
 
 // Divide and Conquer Method
-int tile(int n, int x, int y) 
-{ 
+int tile(int n, int x, int y) { 
 int pos1,pos2; 
 //if grid size =2x2, the grid can be filled with a single tile
-if (n == 2) 
-{ 
+if (n == 2) { 
 	cnt++; 
-	for (int i = 0; i < n; i++)
-	{ 
-		for (int j = 0; j < n; j++) 
-		{ 
-			if (arr[x + i][y + j] == 0) 
-			{ 
+	for (int i = 0; i < n; i++){ 
+		for (int j = 0; j < n; j++) { 
+			if (arr[x + i][y + j] == 0) { 
 				arr[x + i][y + j] = cnt; 
 			} 
 		} 
@@ -42,10 +36,8 @@ if (n == 2)
 } 
 
 /* Identifying the missing tile location*/
-for (int i = x; i < n; i++)
-{ 
-	for (int j = y; j < n; j++) 
-	{ 
+for (int i = x; i < n; i++){ 
+	for (int j = y; j < n; j++){ 
 		if (arr[i][j] != 0) 
 			pos1 = i, pos2 = j; 
 	} 
@@ -78,18 +70,15 @@ tile(n / 2, x + n / 2, y + n / 2);
 	return 0; 
 } 
 
-void print_grid()
-{
-    for (int i = 0; i < grid_size; i++)
-    { 
+void print_grid(){
+    for (int i = 0; i < grid_size; i++){ 
 		for (int j = 0; j < grid_size; j++) 
 			cout << arr[i][j] << " \t"; 
     	cout << "\n"; 
     }
 }
 
-int main() 
-{ 
+int main() { 
 	cin>>grid_size;
 	/*Block the tiles*/
 	arr[a][b] = -1; 

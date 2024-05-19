@@ -29,6 +29,7 @@ CONSTRAINTS (Set -1)
 NOTE:
 You cannot divide a item, like take a part of the item, you can either take the whole item or you can't. Since there is just two options we call this 0-1 knapsack. 
 */
+
 #include<bits/stdc++.h>
 
 using namespace std;

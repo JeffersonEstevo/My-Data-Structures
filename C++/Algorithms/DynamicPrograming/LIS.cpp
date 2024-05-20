@@ -25,8 +25,7 @@ Algorithm:
 3. For each index, check for all elemnts smaller than current and present on left side. Max LIS is possible by inclusion of any of these.
 */
 
-int lis( int arr[], int n )  
-{  
+int lis( int arr[], int n )  {  
     // dp array, here max increasing subsequence, possible till a given index, inclusive of that index.
     int dp[n]; 
    // First element can have LIS of 1 only.
@@ -34,8 +33,7 @@ int lis( int arr[], int n )
   
     /* Compute optimized LIS values in  
        bottom up manner */
-    for (int i = 1; i < n; i++ )  
-    { 
+    for (int i = 1; i < n; i++ ){ 
         //initialize with min possible LIS i.e. 1
         dp[i] = 1; 
         // Check for LIS till all elements smaller than arr[i] and present on left side.

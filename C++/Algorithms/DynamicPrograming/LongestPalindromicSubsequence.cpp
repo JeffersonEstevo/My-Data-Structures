@@ -32,8 +32,7 @@ int lps(string &str){
     return L[0][n-1]; 
 } 
   
-int main() 
-{ 
+int main() { 
     string str;
     cin>>str;
     if (str.length()==0) cout<<0; 

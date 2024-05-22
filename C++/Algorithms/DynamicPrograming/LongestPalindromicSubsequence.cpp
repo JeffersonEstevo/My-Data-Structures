@@ -18,8 +18,7 @@ int lps(string &str){
     
     // Iterate through substrings of length 2 to n
     for (cl=2; cl<=n; cl++){ 
-        for (i=0; i<n-cl+1; i++) 
-        { 
+        for (i=0; i<n-cl+1; i++) { 
             j = i+cl-1; 
             if (str[i] == str[j] && cl == 2) 
                L[i][j] = 2; 

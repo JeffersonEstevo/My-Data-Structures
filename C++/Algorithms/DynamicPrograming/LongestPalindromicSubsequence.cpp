@@ -6,8 +6,7 @@
 using namespace std;
   
 // Returns the length of the longest palindromic subsequence in given string
-int lps(string &str) 
-{ 
+int lps(string &str){ 
    int n = str.length(); 
    int i, j, cl; 
    int L[n][n];  // Table to store results of subproblems 

@@ -26,8 +26,7 @@ int lcs(string X,string Y,int n,int m){
 }
 
 //main 
-int main()
-{
+int main(){
     int n,m;
     string X,Y;
     cin>>n>>X>>m>>Y;

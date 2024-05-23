@@ -28,10 +28,8 @@ bool isSafe(int x, int y, int sol[n][n]) {
     return false;
 } 
 
-void printSolution(int sol[n][n]) 
-{ 
-    for (int i = 0; i < n; i++) 
-    { 
+void printSolution(int sol[n][n]) { 
+    for (int i = 0; i < n; i++){ 
         for (int j = 0; j < n; j++) 
             cout << sol[i][j] << " "; 
         cout << endl; 

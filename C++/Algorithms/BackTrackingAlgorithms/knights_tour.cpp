@@ -21,8 +21,7 @@ int iMove[8] = { 2, 1, -1, -2, -2, -1, 1, 2 };
 int jMove[8] = { 1, 2, 2, 1, -1, -2, -2, -1 }; 
 
 // A function that tell if the cell we go on next is safe 
-bool isSafe(int x, int y, int sol[n][n]) 
-{ 
+bool isSafe(int x, int y, int sol[n][n]) { 
     if(x >= 0 && x < n && y >= 0 && y < n && sol[x][y] == -1){
     	return true;
     } 

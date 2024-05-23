@@ -36,20 +36,17 @@ void printSolution(int sol[n][n]) {
     } 
 }
 
-int solveKTUtil(int x, int y, int movei, int sol[n][n]) 
-{ 
+int solveKTUtil(int x, int y, int movei, int sol[n][n]){ 
     int k, next_x, next_y; 
     if (movei == n*n) 
         return 1; 
       
     /* Try all next moves from  
     the current coordinate x, y */
-    for (k = 0; k < 8; k++) 
-    { 
+    for (k = 0; k < 8; k++){ 
         next_x = x + iMove[k]; 
         next_y = y + jMove[k]; 
-        if (isSafe(next_x, next_y, sol)) 
-        { 
+        if (isSafe(next_x, next_y, sol)){ 
             sol[next_x][next_y] = movei; 
             if (solveKTUtil(next_x, next_y, movei + 1, sol) == 1) 
                 return 1; 
@@ -75,17 +72,15 @@ void solveKT(){
 	// We start at 0, 0
 	sol[0][0] = 0;
 
-	if (solveKTUtil(0, 0, 1, sol) == 0) 
-    { 
-        cout << "Solution does not exist"; 
-        return;
-    } 
+	if (solveKTUtil(0, 0, 1, sol) == 0){ 
+        	cout << "Solution does not exist"; 
+        	return;
+    	} 
 
     printSolution(sol);
 }
 
-int main()
-{
+int main(){
 	/* code */
 	solveKT();
 	return 0;

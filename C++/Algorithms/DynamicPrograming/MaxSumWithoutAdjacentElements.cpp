@@ -20,8 +20,7 @@ int adjacent(vector<vector<int> > &A) {
         dp[i]+=maxval;
     }
     int fmaxs=dp[0];
-    for(int i=1;i<n;i++)//Finding maximum possible of each indices and returning the maxm possible value
-    {
+    for(int i=1;i<n;i++){ //Finding maximum possible of each indices and returning the maxm possible value
         fmaxs=max(fmaxs,dp[i]);
     }
     return fmaxs;

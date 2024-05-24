@@ -10,8 +10,8 @@ int adjacent(vector<vector<int> > &A) {
     if(n==1)
       return dp[0];
     dp[1]=max(A[0][1],A[1][1]);
-    for(int i=2;i<n;i++)//For each index
-    {
+    for(int i=2;i<n;i++){ //For each index
+    
         dp[i]=max(A[0][i],A[1][i]);//Ith value will be maximum of two column values at ith index+maximum of the preceeding values with atleast an index difference of two
         int maxval=0;
         for(int j=i-2;j>=0;j--)//Checking for preceeding indices with differences of two

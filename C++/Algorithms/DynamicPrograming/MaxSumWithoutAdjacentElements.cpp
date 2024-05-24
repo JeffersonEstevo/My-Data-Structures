@@ -14,8 +14,7 @@ int adjacent(vector<vector<int> > &A) {
     
         dp[i]=max(A[0][i],A[1][i]);//Ith value will be maximum of two column values at ith index+maximum of the preceeding values with atleast an index difference of two
         int maxval=0;
-        for(int j=i-2;j>=0;j--)//Checking for preceeding indices with differences of two
-        {
+        for(int j=i-2;j>=0;j--){ //Checking for preceeding indices with differences of two
             maxval=max(maxval,dp[j]);
         }
         dp[i]+=maxval;

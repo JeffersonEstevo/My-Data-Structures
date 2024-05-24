@@ -26,8 +26,7 @@ int adjacent(vector<vector<int> > &A) {
     return fmaxs;
 }
 
-int main()
-{
+int main(){
     int n;
     cin>>n;//Number of columns in 2d array
     vector<vector<int> > v(2,vector<int> (n,0));

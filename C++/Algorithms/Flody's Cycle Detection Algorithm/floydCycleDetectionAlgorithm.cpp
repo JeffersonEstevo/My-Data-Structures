@@ -9,19 +9,16 @@ public:
     Node *next;
 
     // constructor
-    Node(int data)
-    {
+    Node(int data){
         this->data = data;
         this->next = NULL;
     }
 
     // destructor
-    ~Node()
-    {
+    ~Node(){
         int value = this->data;
         // memory free
-        if (this->next != NULL)
-        {
+        if (this->next != NULL){
             delete next;
             this->next = NULL;
         }
@@ -29,8 +26,7 @@ public:
     }
 };
 
-void insertAtHead(Node *&head, int d)
-{
+void insertAtHead(Node *&head, int d){
 
     // new node create
     Node *temp = new Node(d);
@@ -38,38 +34,32 @@ void insertAtHead(Node *&head, int d)
     head = temp;
 }
 
-void insertAtTail(Node *&tail, int d)
-{
+void insertAtTail(Node *&tail, int d){
     // new node create
     Node *temp = new Node(d);
     tail->next = temp;
     tail = temp;
 }
 
-void print(Node *&head)
-{
+void print(Node *&head){
 
-    if (head == NULL)
-    {
+    if (head == NULL){
         cout << "List is empty " << endl;
         return;
     }
     Node *temp = head;
 
-    while (temp != NULL)
-    {
+    while (temp != NULL){
         cout << temp->data << " ";
         temp = temp->next;
     }
     cout << endl;
 }
 
-void insertAtPosition(Node *&tail, Node *&head, int position, int d)
-{
+void insertAtPosition(Node *&tail, Node *&head, int position, int d){
 
     // insert at Start
-    if (position == 1)
-    {
+    if (position == 1){
         insertAtHead(head, d);
         return;
     }
@@ -77,15 +67,13 @@ void insertAtPosition(Node *&tail, Node *&head, int position, int d)
     Node *temp = head;
     int cnt = 1;
 
-    while (cnt < position - 1)
-    {
+    while (cnt < position - 1){
         temp = temp->next;
         cnt++;
     }
 
     // inserting at Last Position
-    if (temp->next == NULL)
-    {
+    if (temp->next == NULL){
         insertAtTail(tail, d);
         return;
     }
@@ -98,27 +86,23 @@ void insertAtPosition(Node *&tail, Node *&head, int position, int d)
     temp->next = nodeToInsert;
 }
 
-void deleteNode(int position, Node *&head)
-{
+void deleteNode(int position, Node *&head){
 
     // deleting first or start node
-    if (position == 1)
-    {
+    if (position == 1){
         Node *temp = head;
         head = head->next;
         // memory free start ndoe
         temp->next = NULL;
         delete temp;
     }
-    else
-    {
+    else{
         // deleting any middle node or last node
         Node *curr = head;
         Node *prev = NULL;
 
         int cnt = 1;
-        while (cnt < position)
-        {
+        while (cnt < position){
             prev = curr;
             curr = curr->next;
             cnt++;
@@ -130,17 +114,14 @@ void deleteNode(int position, Node *&head)
     }
 }
 
-bool isCircularList(Node *head)
-{
+bool isCircularList(Node *head){
     // empty list
-    if (head == NULL)
-    {
+    if (head == NULL){
         return true;
     }
 
     Node *temp = head->next;
-    while (temp != NULL && temp != head)
-    {
+    while (temp != NULL && temp != head){
         temp = temp->next;
     }
 
@@ -152,8 +133,7 @@ bool isCircularList(Node *head)
     return false;
 }
 
-bool detectLoop(Node *head)
-{
+bool detectLoop(Node *head){
 
     if (head == NULL)
         return false;
@@ -162,12 +142,10 @@ bool detectLoop(Node *head)
 
     Node *temp = head;
 
-    while (temp != NULL)
-    {
+    while (temp != NULL){
 
         // cycle is present
-        if (visited[temp] == true)
-        {
+        if (visited[temp] == true){
             cout << "Present on element " << temp->data << endl;
             return true;
         }
@@ -178,30 +156,25 @@ bool detectLoop(Node *head)
     return false;
 }
 
-Node *floydDetectLoop(Node *head)
-{
+Node *floydDetectLoop(Node *head){
 
-    if (head == NULL)
-    {
+    if (head == NULL){
         return NULL;
     }
 
     Node *slow = head;
     Node *fast = head;
 
-    while (slow != NULL && fast != NULL)
-    {
+    while (slow != NULL && fast != NULL){
 
         fast = fast->next;
-        if (fast != NULL)
-        {
+        if (fast != NULL){
             fast = fast->next;
         }
 
         slow = slow->next;
 
-        if (slow == fast)
-        {
+        if (slow == fast){
             cout << "present at " << slow->data << endl;
             return slow;
         }
@@ -210,8 +183,7 @@ Node *floydDetectLoop(Node *head)
     return NULL;
 }
 
-Node *getStartingNode(Node *head)
-{
+Node *getStartingNode(Node *head){
 
     if (head == NULL)
         return NULL;
@@ -219,8 +191,7 @@ Node *getStartingNode(Node *head)
     Node *intersection = floydDetectLoop(head);
     Node *slow = head;
 
-    while (slow != intersection)
-    {
+    while (slow != intersection){
         slow = slow->next;
         intersection = intersection->next;
     }
@@ -228,8 +199,7 @@ Node *getStartingNode(Node *head)
     return slow;
 }
 
-void removeLoop(Node *head)
-{
+void removeLoop(Node *head){
 
     if (head == NULL)
         return;
@@ -237,8 +207,7 @@ void removeLoop(Node *head)
     Node *startOfLoop = getStartingNode(head);
     Node *temp = startOfLoop;
 
-    while (temp->next != startOfLoop)
-    {
+    while (temp->next != startOfLoop){
         temp = temp->next;
     }
 

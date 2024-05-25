@@ -247,8 +247,7 @@ int main(){
     cout << "tail " << tail->data << endl;
     // print(head);
 
-    if (floydDetectLoop(head) != NULL)
-    {
+    if (floydDetectLoop(head) != NULL){
         cout << "Cycle is present " << endl;
     }
     else

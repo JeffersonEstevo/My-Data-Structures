@@ -2,8 +2,7 @@
 #include <map>
 using namespace std;
 
-class Node
-{
+class Node{
 
 public:
     int data;

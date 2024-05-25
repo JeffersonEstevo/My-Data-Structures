@@ -250,8 +250,7 @@ int main(){
     if (floydDetectLoop(head) != NULL){
         cout << "Cycle is present " << endl;
     }
-    else
-    {
+    else{
         cout << "no cycle" << endl;
     }
 

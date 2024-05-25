@@ -214,8 +214,7 @@ void removeLoop(Node *head){
     temp->next = NULL;
 }
 
-int main()
-{
+int main(){
 
     // created a new node
     Node *node1 = new Node(10);

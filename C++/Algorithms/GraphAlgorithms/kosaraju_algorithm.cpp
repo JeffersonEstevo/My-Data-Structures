@@ -30,14 +30,11 @@ void dfs1(int start){
 // This dfs call is on transpose
 // of original graph to find
 // strongly connected components
-void dfs2(int start)
-{
+void dfs2(int start){
     visited[start] = true;
     cout << start << " ";
-    for (int u : edgesT[start])
-    {
-        if (!visited[u])
-        {
+    for (int u : edgesT[start]){
+        if (!visited[u]){
             dfs2(u);
         }
     }

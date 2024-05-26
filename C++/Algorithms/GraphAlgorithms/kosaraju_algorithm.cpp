@@ -40,16 +40,13 @@ void dfs2(int start){
     }
 }
 
-void kosaraju()
-{
+void kosaraju(){
     // Unvisiting all vertices
     visited.assign(n, false);
 
     // Filling stack with the correct vertices
-    for (int i = 0; i < n; i++)
-    {
-        if (!visited[i])
-        {
+    for (int i = 0; i < n; i++){
+        if (!visited[i]){
             dfs1(i);
         }
     }

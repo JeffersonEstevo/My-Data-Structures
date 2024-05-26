@@ -55,12 +55,10 @@ void kosaraju(){
     visited.assign(n, false);
 
     // Finding all the strongly connected components
-    while (!s.empty())
-    {
+    while (!s.empty()){
         int v = s.top();
         s.pop();
-        if (!visited[v])
-        {
+        if (!visited[v]){
             dfs2(v);
             cout << endl;
         }

@@ -17,13 +17,10 @@ int n, e;
 
 // This dfs call is on original graph to
 // fill the stack
-void dfs1(int start)
-{
+void dfs1(int start){
     visited[start] = true;
-    for (int u : edges[start])
-    {
-        if (!visited[u])
-        {
+    for (int u : edges[start]){
+        if (!visited[u]){
             dfs1(u);
         }
     }

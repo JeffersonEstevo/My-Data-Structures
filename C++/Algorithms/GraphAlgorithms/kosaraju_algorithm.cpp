@@ -65,8 +65,7 @@ void kosaraju(){
     }
 }
 
-int main()
-{
+int main(){
     // We make 2 graphs :-
     // 1. The original graph
     // 2. The transpose of original graph
@@ -75,8 +74,7 @@ int main()
     edgesT.assign(n, vector<int>());
     visited.assign(n, false);
     int u, v;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         cin >> u >> v;
         edges[u].push_back(v);
         edgesT[v].push_back(u);

@@ -1,4 +1,4 @@
-You are given array prices [] which contain the price of a stock on some days. You have to choose one day for buying the stock and a different one for selling it. Return the days on which you buy and sell the stock.
+// You are given array prices [] which contain the price of a stock on some days. You have to choose one day for buying the stock and a different one for selling it. Return the days on which you buy and sell the stock.
   //author - Sushrut Shukla
   
 #include

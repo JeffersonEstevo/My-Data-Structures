@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 int main() {
     //Implementing the array for prices on ith days of stock
     int n = 6;

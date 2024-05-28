@@ -41,6 +41,6 @@ int main() {
     return 0;
 }
 
-Output -
-Best Time to buy on day 2 and sell on day 5.
-Maximum Profit Will be 5
+//Output -
+//Best Time to buy on day 2 and sell on day 5.
+//Maximum Profit Will be 5

@@ -30,8 +30,7 @@ int find(int p){
     return find(parent[p]);
 }
 
-void kruskal(vector<Edge> edges)
-{
+void kruskal(vector<Edge> edges){
     // sorting the edges by weight (non decreasing order)
     sort(edges.begin(), edges.end(), compare);
     // initally all parents are equal to 0
@@ -39,22 +38,19 @@ void kruskal(vector<Edge> edges)
     // to save the edges of spanning tree
     vector<Edge> MST;
 
-    for (int i = 0; i < number_of_edges; i++)
-    {
+    for (int i = 0; i < number_of_edges; i++){
         Edge edge = edges[i];
         int u = find(edge.source);
         int v = find(edge.target);
         //union method
         // if both are disjoint then join them
-        if (u != v)
-        {
+        if (u != v){
             MST.push_back(edge);
             parent[u] = v;
         }
     }
     // printing the MST
-    for (int i = 0; i < MST.size(); ++i)
-    {
+    for (int i = 0; i < MST.size(); ++i){
         cout << MST[i].source << " " << MST[i].target << "\n";
     }
 }

@@ -15,13 +15,11 @@ using namespace std;
 int number_of_nodes, number_of_edges;
 int parent[1000];
 //Creating a Edge structure because Kruskal is a edge based algorithm
-struct Edge
-{
+struct Edge{
     int source, target, weight;
 };
 
-bool compare(Edge u, Edge v)
-{
+bool compare(Edge u, Edge v){
     return u.weight < v.weight;
 }
 // kruskal is based on union, find property

@@ -54,8 +54,7 @@ void kruskal(vector<Edge> edges){
         cout << MST[i].source << " " << MST[i].target << "\n";
     }
 }
-int main()
-{
+int main(){
     number_of_nodes = 4;
     number_of_edges = 5;
 

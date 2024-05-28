@@ -23,10 +23,8 @@ bool compare(Edge u, Edge v){
     return u.weight < v.weight;
 }
 // kruskal is based on union, find property
-int find(int p)
-{
-    if (parent[p] == p)
-    {
+int find(int p){
+    if (parent[p] == p){
         return p;
     }
     return find(parent[p]);

@@ -17,15 +17,13 @@ const int V = 4;
 vector<pair<int, int>> graph[V];
 
 //adding edges to the graph with weight
-void addEdge(int source, int target, int weight)
-{
+void addEdge(int source, int target, int weight){
     // creating a pair of target, weight
     graph[source].push_back(make_pair(target, weight));
     // undirected graph
     graph[target].push_back(make_pair(source, weight));
 }
-void prims()
-{
+void prims(){
     // priority queue to sort the edges with minimum distance
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     // assuming the source as 0, we can choose any
@@ -41,20 +39,17 @@ void prims()
     vector<bool> visited(V, false);
     pq.push(make_pair(0, source));
 
-    while (!pq.empty())
-    {
+    while (!pq.empty()){
         // taking edge with minimum distance
         int source = pq.top().second;
         pq.pop();
         visited[source] = true;
-        for (auto neighbour : graph[source])
-        {
+        for (auto neighbour : graph[source]){
             // taking neighbour of the source visiting it and if current distance is smaller we update
             // the distance and parent
             int v = neighbour.first;
             int current_dist = neighbour.second;
-            if (visited[v] != true && distance[v] > current_dist)
-            {
+            if (visited[v] != true && distance[v] > current_dist){
                 pq.push(make_pair(distance[v], v));
                 distance[v] = current_dist;
                 parent[v] = source;

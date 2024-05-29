@@ -1,4 +1,3 @@
-
 /*
     title: Prims algorithm to find minimum spanning tree of a graph
     what will it do: It will find the minimum spanning tree of a graph

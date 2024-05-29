@@ -62,8 +62,7 @@ void prims(){
     }
 }
 
-int main()
-{
+int main(){
     addEdge(0, 1, 1);
     addEdge(0, 2, 4);
     addEdge(0, 3, 3);

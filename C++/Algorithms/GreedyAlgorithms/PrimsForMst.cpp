@@ -57,8 +57,7 @@ void prims(){
         }
     }
     // printing the Minimum spanning tree
-    for (int i = 0; i < V; ++i)
-    {
+    for (int i = 0; i < V; ++i){
         cout << parent[i] << " " << i << endl;
     }
 }

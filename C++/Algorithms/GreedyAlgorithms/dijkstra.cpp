@@ -42,10 +42,9 @@ void DijkstraAlgo(int m, int n,int graph[][20],int src) // adjacency matrix{
     }
 }
 
-int main()
-
-{ int m,n;
-cin>>m>>n;
+int main(){ 
+    int m,n;
+    cin>>m>>n;
     int graph[20][20];
     for(int i=0;i<m;i++){
         for(int j=0;j<m;j++){

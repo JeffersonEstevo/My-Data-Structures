@@ -2,14 +2,11 @@
 
 using namespace std;
 
-int miniDist(int distance[], bool Tset[],int m,int n) // finding minimum distance
-{
+int miniDist(int distance[], bool Tset[],int m,int n) // finding minimum distance{
     int minimum=INT_MAX,ind;
 
-    for(int k=0;k<m;k++)
-    {
-        if(Tset[k]==false && distance[k]<=minimum)
-        {
+    for(int k=0;k<m;k++){
+        if(Tset[k]==false && distance[k]<=minimum){
             minimum=distance[k];
             ind=k;
         }

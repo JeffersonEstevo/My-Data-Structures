@@ -14,14 +14,12 @@ int miniDist(int distance[], bool Tset[],int m,int n) // finding minimum distanc
     return ind;
 }
 
-void DijkstraAlgo(int m, int n,int graph[][20],int src) // adjacency matrix
-{
+void DijkstraAlgo(int m, int n,int graph[][20],int src) // adjacency matrix{
     int distance[m]; // // array to calculate the minimum distance for each node
     bool Tset[n];// boolean array to mark visited and unvisited for each node
 
 
-    for(int k = 0; k<m; k++)
-    {
+    for(int k = 0; k<m; k++){
         distance[k] = INT_MAX;
         Tset[k] = false;
     }

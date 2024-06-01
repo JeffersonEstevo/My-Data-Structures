@@ -36,8 +36,7 @@ void DijkstraAlgo(int m, int n,int graph[][20],int src) // adjacency matrix{
         }
     }
     cout<<"Vertex\t\tDistance from source vertex"<<endl;
-    for(int k = 0; k<m; k++)
-    {
+    for(int k = 0; k<m; k++){
         char str=65+k;
         cout<<str<<"\t\t\t"<<distance[k]<<endl;
     }

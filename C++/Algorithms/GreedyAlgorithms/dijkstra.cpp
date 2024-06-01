@@ -26,12 +26,10 @@ void DijkstraAlgo(int m, int n,int graph[][20],int src) // adjacency matrix{
 
     distance[src] = 0;   // Source vertex distance is set 0
 
-    for(int k = 0; k<m; k++)
-    {
+    for(int k = 0; k<m; k++){
         int mn=miniDist(distance,Tset,m,n);
         Tset[mn]=true;
-        for(int k = 0; k<m; k++)
-        {
+        for(int k = 0; k<m; k++){
             // updating the distance of neighbouring vertex
             if(!Tset[k] && graph[mn][k] && distance[mn]!=INT_MAX && distance[mn]+graph[mn][k]<distance[k])
                 distance[k]=distance[mn]+graph[mn][k];

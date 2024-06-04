@@ -18,8 +18,7 @@ using namespace std;
 //     }
 //     return res;
 // }
-int power(int x,int y)
-{
+int power(int x,int y){
     int res=1;
     
     while(y>0)

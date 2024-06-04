@@ -31,8 +31,7 @@ int power(int x,int y){
     re res;
 } 
 
-int main()
-{
+int main(){
     cout<<power(8,4)<<"\n";
     cout<<power(10,5)<<"\n";
 }

@@ -27,18 +27,14 @@ int *zFunction(string str){
             z[i] = r - l;
             r--;
         }
-        else
-        {
+        else{
             int k = i - l;
-            if (z[k] <= r - i)
-            {
+            if (z[k] <= r - i){
                 z[i] = z[k];
             }
-            else
-            {
+            else{
                 l = i;
-                while (r < n && str[r - l] == str[r])
-                {
+                while (r < n && str[r - l] == str[r]){
                     r++;
                 }
                 z[i] = r - l;
@@ -49,24 +45,20 @@ int *zFunction(string str){
     return z;
 }
 
-void zPattern(string text, string pattern)
-{
+void zPattern(string text, string pattern){
     // Insert a charater that is not present in both the strings
     string str = pattern + '$' + text;
     int *z = zFunction(str);
 
     // Printing all the substring that have length equal to pattern
-    for (int i = 0; i < str.length(); i++)
-    {
-        if (z[i] == pattern.length())
-        {
+    for (int i = 0; i < str.length(); i++){
+        if (z[i] == pattern.length()){
             cout << i - pattern.length() - 1 << " ";
         }
     }
 }
 
-int main()
-{
+int main(){
     string text = "thiscodeisourcode";
     string pattern = "code";
     zPattern(text, pattern);

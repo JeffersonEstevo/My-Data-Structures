@@ -18,8 +18,7 @@ int *zFunction(string str){
     int *z = new int[n];
     int l = 0, r = 0;
     for (int i = 0; i < n; i++){
-        if (i > r)
-        {
+        if (i > r){
             l = i;
             r = i;
             while (i < n && str[r - l] == str[r])

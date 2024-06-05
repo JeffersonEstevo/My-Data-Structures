@@ -17,8 +17,7 @@ int *zFunction(string str){
     int n = str.length();
     int *z = new int[n];
     int l = 0, r = 0;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         if (i > r)
         {
             l = i;

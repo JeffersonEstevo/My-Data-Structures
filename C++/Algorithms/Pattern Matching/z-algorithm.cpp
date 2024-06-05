@@ -21,8 +21,7 @@ int *zFunction(string str){
         if (i > r){
             l = i;
             r = i;
-            while (i < n && str[r - l] == str[r])
-            {
+            while (i < n && str[r - l] == str[r]){
                 r++;
             }
             z[i] = r - l;

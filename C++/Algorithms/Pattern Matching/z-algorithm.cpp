@@ -13,8 +13,7 @@ using namespace std;
     longest substring that is also
     a prefix starting from i 
 */
-int *zFunction(string str)
-{
+int *zFunction(string str){
     int n = str.length();
     int *z = new int[n];
     int l = 0, r = 0;

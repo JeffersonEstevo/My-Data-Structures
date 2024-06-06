@@ -29,6 +29,7 @@ void dfs(int x,int prev){
 		centroid.push_back(x);
 	}
 }
+
 int main(){
 	cout<<"Enter the total nodes in the tree"<<endl;
 	cin>>n;

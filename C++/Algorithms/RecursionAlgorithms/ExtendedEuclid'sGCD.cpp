@@ -19,8 +19,7 @@ int gcd(int a, int b, int &x, int &y){
     return d;
 }
 
-int main()
-{
+int main(){
     int x = 0, y = 0, a, b;
     cout << "Enter two numbers: ";
     cin >> a >> b;

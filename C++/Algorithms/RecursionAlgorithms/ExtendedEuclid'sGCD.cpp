@@ -7,8 +7,7 @@ ax + by = gcd(a,b) for given a and b.
 #include <iostream>
 using namespace std;
 int gcd(int a, int b, int &x, int &y){
-    if (a == 0)
-    {
+    if (a == 0){
         x = 0;
         y = 1;
         return b;

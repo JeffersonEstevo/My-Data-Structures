@@ -7,8 +7,7 @@ int fibonacciList(int n){
     if (n <= 1){
         return n;
     }
-    else
-    {
+    else{
         // Returns the function recursively for the next number
         return fibonacciList(n - 1) + fibonacciList(n - 2);
     }

@@ -12,8 +12,7 @@ void factors(int n, int i){
     }
 }
 
-int main()
-{
+int main(){
     /* 
         Factors Algorithm Implementation in C++
         

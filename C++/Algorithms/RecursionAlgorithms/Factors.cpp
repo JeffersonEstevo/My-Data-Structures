@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void factors(int n, int i)
-{
+void factors(int n, int i){
     // Checking if the number is less than n
     if (i <= n)
     {

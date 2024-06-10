@@ -2,11 +2,9 @@
 using namespace std;
 
 // Recursive function to return Fibonacci List
-int fibonacciList(int n)
-{
+int fibonacciList(int n){
     // Checks if n<=1, i.e. 0 and 1
-    if (n <= 1)
-    {
+    if (n <= 1){
         return n;
     }
     else
@@ -16,8 +14,7 @@ int fibonacciList(int n)
     }
 }
 
-int main()
-{
+int main(){
 
     /* 
         Fibonacci List Algorithm Implementation in C++

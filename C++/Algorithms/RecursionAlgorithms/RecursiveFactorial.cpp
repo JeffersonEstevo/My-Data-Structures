@@ -9,8 +9,7 @@ value will exceed the capacity of largest positive integer data type [unsigned l
 using namespace std;
 
 // A recursive function to calculate the factorial a positive integer.
-unsigned long long recursiveFactorial(unsigned int num)
-{
+unsigned long long recursiveFactorial(unsigned int num){
     if(num<=1)
         return 1;
     return num * recursiveFactorial(num-1);

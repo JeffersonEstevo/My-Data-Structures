@@ -6,7 +6,6 @@ value will exceed the capacity of largest positive integer data type [unsigned l
 */
 
 #include<bits/stdc++.h>
-
 using namespace std;
 
 // A recursive function to calculate the factorial a positive integer.

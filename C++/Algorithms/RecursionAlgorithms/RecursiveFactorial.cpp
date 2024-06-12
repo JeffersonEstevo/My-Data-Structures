@@ -15,8 +15,7 @@ unsigned long long recursiveFactorial(unsigned int num){
     return num * recursiveFactorial(num-1);
 }
 
-int main()   
-{
+int main()   {
     int num;
     cout << "\n Enter a positive integer to find its factorial: ";
     cin >> num;

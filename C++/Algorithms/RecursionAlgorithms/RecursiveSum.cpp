@@ -7,8 +7,7 @@ Description- A Program to recursively calculate sum of N natural numbers.
 using namespace std;
 
 // A recursive function to calculate the sum of N natural numbers
-int recursiveSum(int num)
-{
+int recursiveSum(int num){
     if(num == 0) 
     return 0;   
     return (recursiveSum(num - 1) + num); 

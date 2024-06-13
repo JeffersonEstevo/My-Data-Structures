@@ -13,8 +13,7 @@ int recursiveSum(int num){
     return (recursiveSum(num - 1) + num); 
 }
 
-int main()   
-{
+int main()   {
     int num;
     cout<<"\n Enter a number N to find sum of first N natural numbers: ";
     cin>>num;    

@@ -24,8 +24,7 @@ void towerOfHanoi(int n, char source,char destination, char intermediate)  {
 }  
   
 // Driver code 
-int main()  
-{  
+int main()  {  
     cout<<"Enter number of disks"<<endl;
     int n ;//Number of disks
     cin>>n;

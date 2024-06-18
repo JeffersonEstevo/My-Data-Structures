@@ -9,8 +9,8 @@ int power(int a, int b){
 		return 1;
 
 	//recursive cases
-	if (b % 2 == 0) //b is even
-	{
+	if (b % 2 == 0){ //b is even
+	
 		return power(a, b / 2) * power(a, b / 2);
 	}
 	else //b is odd

@@ -18,8 +18,7 @@ int power(int a, int b){
 	}
 }
 
-int main()
-{
+int main(){
 	int a, b;
 	cout << "Enter the base and exponent: ";
 	cin >> a >> b;

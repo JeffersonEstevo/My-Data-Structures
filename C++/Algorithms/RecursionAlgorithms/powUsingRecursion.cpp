@@ -13,8 +13,7 @@ int power(int a, int b){
 	
 		return power(a, b / 2) * power(a, b / 2);
 	}
-	else //b is odd
-	{
+	else{ //b is odd
 		return a * power(a, b / 2) * power(a, b / 2);
 	}
 }

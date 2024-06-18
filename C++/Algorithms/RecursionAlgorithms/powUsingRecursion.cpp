@@ -3,8 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int power(int a, int b)
-{
+int power(int a, int b){
 	//base case
 	if (b == 0)
 		return 1;

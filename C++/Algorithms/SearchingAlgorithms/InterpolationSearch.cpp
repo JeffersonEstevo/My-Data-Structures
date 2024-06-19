@@ -11,8 +11,7 @@ int interpolationSearch(int arr[], int n, int x){
     // Since array is sorted, an element present
     // in array must be in range defined by corner
     while (lo <= hi && x >= arr[lo] && x <= arr[hi]){
-        if (lo == hi)
-        {
+        if (lo == hi){
             if (arr[lo] == x) return lo;
             return -1;
         }

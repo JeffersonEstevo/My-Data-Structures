@@ -4,8 +4,7 @@ using namespace std;
  
 // If x is present in arr[0..n-1], then returns
 // index of it, else returns -1.
-int interpolationSearch(int arr[], int n, int x)
-{
+int interpolationSearch(int arr[], int n, int x){
     // Find indexes of two corners
     int lo = 0, hi = (n - 1);
  

@@ -36,8 +36,7 @@ int interpolationSearch(int arr[], int n, int x){
 }
  
 
-int main()
-{
+int main(){
     // Array of items on which search will
     // be conducted.
     int arr[] = {10, 12, 13, 16, 18, 19, 20, 21,

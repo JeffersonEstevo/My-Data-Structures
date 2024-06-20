@@ -20,8 +20,7 @@ int binarySearchRecursive(const vector<int> &a, int l, int r, int t){
         if (a[m] == t){
             return m;
         }
-        else if (a[m] > t)
-        {
+        else if (a[m] > t){
             return binarySearchRecursive(a, l, m - 1, t);
         }
         else

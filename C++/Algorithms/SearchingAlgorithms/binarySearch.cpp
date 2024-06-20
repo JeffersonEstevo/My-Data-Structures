@@ -12,8 +12,7 @@
 using namespace std;
 
 // Recursive approach
-int binarySearchRecursive(const vector<int> &a, int l, int r, int t)
-{
+int binarySearchRecursive(const vector<int> &a, int l, int r, int t){
     if (l <= r)
     {
         // middle element

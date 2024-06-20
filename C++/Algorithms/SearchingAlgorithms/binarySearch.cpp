@@ -17,8 +17,7 @@ int binarySearchRecursive(const vector<int> &a, int l, int r, int t){
         // middle element
         int m = l + (r - l) / 2;
 
-        if (a[m] == t)
-        {
+        if (a[m] == t){
             return m;
         }
         else if (a[m] > t)

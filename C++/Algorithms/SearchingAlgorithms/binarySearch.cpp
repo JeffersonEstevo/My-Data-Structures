@@ -23,8 +23,7 @@ int binarySearchRecursive(const vector<int> &a, int l, int r, int t){
         else if (a[m] > t){
             return binarySearchRecursive(a, l, m - 1, t);
         }
-        else
-        {
+        else{
             return binarySearchRecursive(a, m + 1, r, t);
         }
     }
@@ -34,22 +33,17 @@ int binarySearchRecursive(const vector<int> &a, int l, int r, int t){
 }
 
 // Iterative approach
-int binarySearchIterative(const vector<int> &a, int l, int r, int t)
-{
-    while (l <= r)
-    {
+int binarySearchIterative(const vector<int> &a, int l, int r, int t){
+    while (l <= r){
         int m = l + (r - l) / 2;
 
-        if (a[m] == t)
-        {
+        if (a[m] == t){
             return m;
         }
-        else if (a[m] > t)
-        {
+        else if (a[m] > t){
             r = m - 1;
         }
-        else
-        {
+        else{
             l = m + 1;
         }
     }
@@ -57,8 +51,7 @@ int binarySearchIterative(const vector<int> &a, int l, int r, int t)
     return -1;
 }
 
-int main()
-{
+int main(){
     //For fast input output
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
     
@@ -68,8 +61,7 @@ int main()
     cout << "Enter the sorted elements: ";
     vector<int> a(n);
     
-    for (size_t i = 0; i < a.size(); i++)
-    {
+    for (size_t i = 0; i < a.size(); i++){
         cin >> a[i];
     }
     cout << "Enter the element to find";

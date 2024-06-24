@@ -8,8 +8,7 @@ using namespace std;
 int binary_search(int arr[], int, int, int);
 
 //exponential search - returns the position of first occurrence of ele in array
-int exponential_search(int arr[], int size, int ele)
-{
+int exponential_search(int arr[], int size, int ele){
 
     //If ele is present at arr[0]
     if (arr[0] == ele)

@@ -36,8 +36,7 @@ int binary_search(int arr[], int left, int right, int ele){
 
         //If the ele is smaller the middle element than
         //the ele is present in left subarray
-        if (arr[middle] > ele)
-        {
+        if (arr[middle] > ele){
             return binary_search(arr, left, middle - 1, ele);
 
             //ele present in right subarray

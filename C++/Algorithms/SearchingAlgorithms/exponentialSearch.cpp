@@ -49,8 +49,7 @@ int binary_search(int arr[], int left, int right, int ele){
 }
 
 //starting point
-int main(void)
-{
+int main(void){
     //variables declaration
     int size, i, ele;
     int * arr;
@@ -59,8 +58,7 @@ int main(void)
     cout<<"How many numbers you would like to add? "<<"\n";
     cin>>size;
     
-    try
-    {
+    try{
         arr = new int[size];
         if(arr == nullptr){
             cout << "Error: memory could not be allocated";
@@ -83,8 +81,7 @@ int main(void)
         
     }
     //catching the unknown error
-    catch(...)
-    {
+    catch(...){
         cout<<"Error occurred";
     }
     

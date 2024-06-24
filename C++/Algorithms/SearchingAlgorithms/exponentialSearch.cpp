@@ -25,8 +25,7 @@ int exponential_search(int arr[], int size, int ele){
 
 //Recursive binary search -  returns the location of the search ele
 int binary_search(int arr[], int left, int right, int ele){
-    if (right >= left)
-    {
+    if (right >= left){
 
         //middle element location in the array
         int middle = left + (right - left) / 2;

@@ -23,8 +23,7 @@ int rabinKarp(string txt, string pat, int q) {
 	
 	for(int i=0;i<=txt_len-pat_len;i++){
 	    //checking if the hash values are same
-		if(p == t)
-	    {
+		if(p == t){
 	        int j;
 	        for(j=0;j<pat_len;j++)
 	        {

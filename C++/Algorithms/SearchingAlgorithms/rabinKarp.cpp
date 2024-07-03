@@ -5,8 +5,7 @@
 using namespace std;
  
 
-int rabinKarp(string txt, string pat, int q) 
-{ 
+int rabinKarp(string txt, string pat, int q) { 
 	int txt_len = txt.length();
 	int pat_len = pat.length();
     	int d = 256;
@@ -16,8 +15,7 @@ int rabinKarp(string txt, string pat, int q)
 	    h = (h*d)%q;
 	
 	//calculating rolling hash till the length of the pattern string
-	for(int i=0;i<pat_len;i++)
-	{
+	for(int i=0;i<pat_len;i++){
 	    p = (d*p + pat[i])%q;
 	    t = (d*t + txt[i])%q;
 	}

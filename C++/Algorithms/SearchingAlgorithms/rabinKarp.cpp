@@ -25,8 +25,7 @@ int rabinKarp(string txt, string pat, int q) {
 	    //checking if the hash values are same
 		if(p == t){
 	        int j;
-	        for(j=0;j<pat_len;j++)
-	        {
+	        for(j=0;j<pat_len;j++){
 	            if(txt[i+j] != pat[j])
 	                break;
 	        }
@@ -35,8 +34,7 @@ int rabinKarp(string txt, string pat, int q) {
 	    }
 		
 		//recalculating hash for the next window
-	    if(i < txt_len-pat_len)
-	    {
+	    if(i < txt_len-pat_len){
 	        t = ((t - txt[i]*h)*d + txt[pat_len+i])%q;
 	        if(t < 0)
 	            t = t + q;
@@ -45,8 +43,7 @@ int rabinKarp(string txt, string pat, int q) {
 	return -1;
 } 
 
-int main()
-{
+int main(){
     string text = "AABBACHADA";
     string pat = "BBAC";
     int index =  rabinKarp(text,pat,101);

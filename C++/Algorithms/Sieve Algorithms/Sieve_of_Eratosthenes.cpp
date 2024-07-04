@@ -25,8 +25,7 @@ void sieve_of_eratosthenes(int n){
             prime[j] = false;
         }
     }
-    for (int i = 2; i < n; i++)
-    {
+    for (int i = 2; i < n; i++){
         if (prime[i])
         {
             cout << i << " ";

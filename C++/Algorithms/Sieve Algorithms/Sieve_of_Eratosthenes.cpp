@@ -6,8 +6,7 @@
 #include <iostream>
 using namespace std;
 
-void sieve_of_eratosthenes(int n)
-{
+void sieve_of_eratosthenes(int n){
     /*
     This will print all 
     prime number less than n

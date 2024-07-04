@@ -14,8 +14,7 @@ void sieve_of_eratosthenes(int n){
 
     // Initially all are prime
     bool *prime = new bool[n];
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         prime[i] = true;
     }
 

@@ -21,8 +21,7 @@ void sieve_of_eratosthenes(int n){
     // Now we start marking multiples of every number non-prime
     for (int i = 2; i * i <= n; i++){
         // We start from first multiple and go till n
-        for (int j = 2 * i; j < n; j += i)
-        {
+        for (int j = 2 * i; j < n; j += i){
             prime[j] = false;
         }
     }

@@ -33,7 +33,6 @@ void sieve_of_eratosthenes(int n){
     }
 }
 
-int main()
-{
+int main(){
     sieve_of_eratosthenes(50);
 }

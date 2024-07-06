@@ -1,4 +1,3 @@
-
 /*
     Algorithm: Sieve of Sundaram. 
     Given a number n, print all prime numbers less than n

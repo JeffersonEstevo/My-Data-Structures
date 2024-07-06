@@ -27,8 +27,7 @@ int sieve_of_sundaram(int n){
             cout << 2*i + 1 << " "; 
 } 
   
-int main(void) 
-{ 
+int main(void) { 
     sieve_of_sundaram(50); 
     return 0; 
 } 

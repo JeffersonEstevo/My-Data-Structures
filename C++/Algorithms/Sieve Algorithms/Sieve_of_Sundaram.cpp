@@ -6,8 +6,7 @@
 #include <bits/stdc++.h> 
 using namespace std; 
   
-int sieve_of_sundaram(int n) 
-{ 
+int sieve_of_sundaram(int n){ 
     // Sieve of Sundaram produces primes smaller than (2*x + 2) for a number given number x. 
     int m = (n-1)/2; 
   

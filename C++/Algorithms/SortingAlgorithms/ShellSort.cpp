@@ -1,4 +1,3 @@
-
 /*
 Short Introduction:-
 Shell sort is a highly efficient sorting algorithm and is based on insertion sort algorithm.
@@ -11,7 +10,6 @@ Worst case time complexity = O(n2)
 Best case complexity = O(nlog(n)).
 Space complexity = O(1).
 */
-
 
 #include<iostream>
 using namespace std;

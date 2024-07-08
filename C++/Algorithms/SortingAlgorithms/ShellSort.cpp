@@ -27,6 +27,7 @@ void shellSort(int sort[],int size){
         }
     }
 }
+
 //main program
 int main(){
     int size;

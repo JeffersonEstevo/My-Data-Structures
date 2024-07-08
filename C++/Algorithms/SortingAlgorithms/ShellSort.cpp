@@ -14,6 +14,7 @@ Space complexity = O(1).
 
 #include<iostream>
 using namespace std;
+
 /*Method to sort the list/array*/
 void shellSort(int sort[],int size){
     for(int gap=size/2;gap>0;gap/=2){

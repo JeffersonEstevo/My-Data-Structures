@@ -9,8 +9,7 @@
 using namespace std;
 #define MAX 100000
 
-void adjust(int a[], int n, int i)
-{ // to heapify the root
+void adjust(int a[], int n, int i){ // to heapify the root
     while (2 * i + 1 <= n)
     {
         int j = 2 * i + 1;

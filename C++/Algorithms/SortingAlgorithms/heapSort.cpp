@@ -40,8 +40,7 @@ void heapsort(int a[], int n){
     }
 }
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter the number of elments in array : ";
     cin >> n;

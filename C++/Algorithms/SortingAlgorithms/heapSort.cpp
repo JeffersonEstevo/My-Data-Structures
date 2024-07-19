@@ -30,8 +30,7 @@ void heapsort(int a[], int n){
         adjust(a, n - 1, i);
     }
 
-    while (n > 0)
-    { //  move current root to end
+    while (n > 0){ //  move current root to end
         int t = 0;
         t = a[0];
         a[0] = a[n - 1];

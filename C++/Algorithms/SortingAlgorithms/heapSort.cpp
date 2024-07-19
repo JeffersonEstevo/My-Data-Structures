@@ -46,8 +46,7 @@ int main(){
     cin >> n;
     int a[MAX];
     cout << "Enter the elements in heap" << endl;
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         cin >> a[i];
     }
     heapsort(a, n);

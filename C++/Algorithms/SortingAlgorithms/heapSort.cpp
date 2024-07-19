@@ -25,8 +25,7 @@ void adjust(int a[], int n, int i){ // to heapify the root
     }
 }
 
-void heapsort(int a[], int n)
-{
+void heapsort(int a[], int n){
     for (int i = n / 2 - 1; i >= 0; i--)
     { // build heap
         adjust(a, n - 1, i);

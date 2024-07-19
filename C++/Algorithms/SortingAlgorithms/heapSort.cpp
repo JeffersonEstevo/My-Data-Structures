@@ -16,8 +16,7 @@ void adjust(int a[], int n, int i){ // to heapify the root
             j = j + 1;
         if (a[i] >= a[j])
             break;
-        else
-        {
+        else{
             int temp = a[i];
             a[i] = a[j];
             a[j] = temp;

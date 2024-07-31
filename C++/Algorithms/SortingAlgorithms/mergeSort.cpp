@@ -9,8 +9,7 @@
 using namespace std;
 #define MAX 100000
 
-void merge(int arr[], int l, int m, int r) // fn for merging the elements in sorted manner.
-{
+void merge(int arr[], int l, int m, int r) // fn for merging the elements in sorted manner.{
     int i, j, k;
     int n1 = m - l + 1; // elements in LHS
     int n2 = r - m;     // elements in RHS

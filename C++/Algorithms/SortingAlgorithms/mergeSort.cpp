@@ -25,8 +25,7 @@ void merge(int arr[], int l, int m, int r) // fn for merging the elements in sor
     j = 0;
     k = l;
     while (i < n1 && j < n2){
-        if (L[i] <= R[j])
-        {
+        if (L[i] <= R[j]){
             arr[k] = L[i];
             i++;
         }

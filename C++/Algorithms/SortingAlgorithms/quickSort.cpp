@@ -42,14 +42,16 @@ int main(){
     cout << "Enter the number of elements in the array : ";
     cin >> n;
     cout << "Enter the elements : ";
-    for (int i = 0; i < n; i++)
-    {
+   
+    for (int i = 0; i < n; i++){
         cin >> num;
         arr[i] = num;
     }
     quicksort(arr, 0, n - 1);
     cout << "Array after sorting: ";
+   
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
+   
     return 0;
 }

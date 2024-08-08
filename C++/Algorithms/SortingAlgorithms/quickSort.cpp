@@ -9,8 +9,7 @@
 using namespace std;
 #define MAX 100000
 
-void swap(int *a, int *b) //for swapping elements
-{
+void swap(int *a, int *b) //for swapping elements{
     int t = *a;
     *a = *b;
     *b = t;

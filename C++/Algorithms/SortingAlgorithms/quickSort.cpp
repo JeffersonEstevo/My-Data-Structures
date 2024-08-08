@@ -36,8 +36,7 @@ void quicksort(int arr[], int low, int high){ // recursive calls for partitionin
     }
 }
 
-int main()
-{
+int main(){
     int n, num, x;
     int arr[MAX];
     cout << "Enter the number of elements in the array : ";

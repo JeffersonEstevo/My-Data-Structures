@@ -18,8 +18,7 @@ void swap(int *a, int *b) //for swapping elements{
 int partition(int arr[], int low, int high) //for chosing partitioning around pivot{
     int pivot = arr[high];
     int i = (low - 1);
-    for (int j = low; j <= high; j++)
-    {
+    for (int j = low; j <= high; j++){
         if (arr[j] < pivot)
         {
             i++;

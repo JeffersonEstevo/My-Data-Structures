@@ -9,13 +9,13 @@
 using namespace std;
 #define MAX 100000
 
-void swap(int *a, int *b) //for swapping elements{
+void swap(int *a, int *b){ //for swapping elements
     int t = *a;
     *a = *b;
     *b = t;
 }
 
-int partition(int arr[], int low, int high) //for chosing partitioning around pivot{
+int partition(int arr[], int low, int high){ //for chosing partitioning around pivot
     int pivot = arr[high];
     int i = (low - 1);
     for (int j = low; j <= high; j++){

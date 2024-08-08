@@ -28,8 +28,7 @@ int partition(int arr[], int low, int high) //for chosing partitioning around pi
     return (i + 1);
 }
 
-void quicksort(int arr[], int low, int high) // recursive calls for partitioning.
-{
+void quicksort(int arr[], int low, int high){ // recursive calls for partitioning.
     if (low < high)
     {
         int pi = partition(arr, low, high);

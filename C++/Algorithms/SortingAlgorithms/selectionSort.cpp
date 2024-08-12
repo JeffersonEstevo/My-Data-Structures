@@ -27,8 +27,7 @@ void selectionSort(int arr[], int n){
 }
 
 // Function to print an array
-void printArray(int arr[], int size)
-{
+void printArray(int arr[], int size){
     int i;
     for (i = 0; i < size; i++)
         cout << arr[i] << " ";
@@ -36,8 +35,7 @@ void printArray(int arr[], int size)
 }
 
 // Driver program to test above functions
-int main()
-{
+int main(){
     /* 
     Selection Sort Algorithm Implementation in C++
         input : Unordered array

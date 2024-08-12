@@ -10,13 +10,11 @@ void swap(int *a, int *b){
     *b = temp;
 }
 
-void selectionSort(int arr[], int n)
-{
+void selectionSort(int arr[], int n){
     int i, j, minIndex;
 
     // One by one move boundary of unsorted subarray
-    for (i = 0; i < n - 1; i++)
-    {
+    for (i = 0; i < n - 1; i++){
         // Find the minimum element in unsorted array
         minIndex = i;
         for (j = i + 1; j < n; j++)

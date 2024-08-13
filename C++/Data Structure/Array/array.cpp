@@ -24,6 +24,7 @@ void updation() {
     cout << foo[4]<< " ";
 
 }
+
 int main() {
     sum();
     updation();

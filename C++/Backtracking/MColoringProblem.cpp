@@ -9,6 +9,7 @@ bool check(int node, int color[], bool graph[101][101], int n, int col) {
   }
   return true;
 }
+
 bool solve(int node, int color[], int m, int N, bool graph[101][101]) {
   if (node == N) {
     return true;

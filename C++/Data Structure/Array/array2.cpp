@@ -6,8 +6,7 @@
 #include <numeric> //For accumulate operation 
 using namespace std; 
 
-int main() 
-{ 
+int main() { 
 	// Initializing vector with array values 
 	int arr[] = {10, 20, 5, 23 ,42 , 15}; 
 	int n = sizeof(arr)/sizeof(arr[0]);

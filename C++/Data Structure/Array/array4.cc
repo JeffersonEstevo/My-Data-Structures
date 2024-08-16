@@ -7,7 +7,6 @@
 using namespace std;
 
 int main() {
-
     
     // initialize vectors 
     int arr[] = {40, 30, 80, 50, 90, 20, 30, 100};

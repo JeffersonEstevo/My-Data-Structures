@@ -1,6 +1,5 @@
 //  lower bound and upper bound in vectors
 
-
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,13 +1,16 @@
 //  lower bound and upper bound in vectors
 
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 
 using namespace std;
 
 int main() {
 
+    
     // initialize vectors 
     int arr[] = {40, 30, 80, 50, 90, 20, 30, 100};
     int n = sizeof(arr)/sizeof(arr[0]);

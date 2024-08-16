@@ -19,7 +19,6 @@ int main() {
     // returns the first occurrence of 20
     auto p = lower_bound(vect.begin(), vect.end(), 30);
     auto q = upper_bound(vect.begin(), vect.end(), 30);
-
     cout << p-vect.begin() << endl;
     cout << q-vect.begin();
 

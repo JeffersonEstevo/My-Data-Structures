@@ -9,7 +9,6 @@
 using namespace std;
 
 
-
 int main() {
     
     int arr[] = {5, 11, 15, 20, 25, 30, 35, 40, 5, 10, 15, 20, 25};

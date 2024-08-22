@@ -46,6 +46,7 @@ struct dsu{
 		}
 	}
 };
+
 int n,m,x,y;
 /*
 n -> number of vertices

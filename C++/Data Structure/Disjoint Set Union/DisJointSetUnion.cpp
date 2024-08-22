@@ -22,10 +22,12 @@ struct dsu{
 			edges[i] = 0;
 		}
 	}
+
 	int p(int x){
 		if(par[x]==x) return x;
 		return par[x] = p(par[x]);//Path Compression
 	}
+
 	void unite(int x,int y){
 		int supx = p(x);
 		int supy = p(y);
@@ -53,6 +55,7 @@ n -> number of vertices
 m -> number of edges
 unite(x,y) is used to create an edge between x and y or in other words, x and y are in same component
 */
+
 int main(){
 	cin>>n>>m>>x>>y;
 	dsu d;

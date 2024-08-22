@@ -1,12 +1,13 @@
 #include <iostream>
+
 using namespace std;
+
 /*
 Disjoint Set Union is extremely useful if we want to know the number of components in a graph, size of each components and 
 whether 2 vertices are in same component or not in almost O(1) time. Disjoint is also useful for detecting cycles in the graph.
 Each component is represented by a single vertex, sometimes called as superparent of that component. 
 If superparent of 2 vertices are same, that means those 2 vertices are in same component.
 */
-
 struct dsu{
 	int *par;
 	int *size;

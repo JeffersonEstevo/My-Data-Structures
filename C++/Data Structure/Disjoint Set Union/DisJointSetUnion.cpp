@@ -6,8 +6,7 @@ whether 2 vertices are in same component or not in almost O(1) time. Disjoint is
 Each component is represented by a single vertex, sometimes called as superparent of that component. 
 If superparent of 2 vertices are same, that means those 2 vertices are in same component.
 */
-struct dsu
-{
+struct dsu{
 	int *par;
 	int *size;
 	int *edges;

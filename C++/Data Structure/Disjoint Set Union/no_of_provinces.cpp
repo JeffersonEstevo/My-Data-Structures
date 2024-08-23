@@ -3,6 +3,7 @@
 using namespace std;
 
 class Solution {
+
 public:
     // finding nod1->par equaility with nod2->par;
     // to check whether their same component or not;

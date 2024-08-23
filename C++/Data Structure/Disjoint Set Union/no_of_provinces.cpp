@@ -32,6 +32,7 @@ public:
                 }
             }
         }
+        
         // find(); // parent finding
         // together();
         int c=0;

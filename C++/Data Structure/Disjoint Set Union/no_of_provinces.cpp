@@ -5,6 +5,7 @@ using namespace std;
 class Solution {
 
 public:
+
     // finding nod1->par equaility with nod2->par;
     // to check whether their same component or not;
     // if they are same locality then we count both as 1,
@@ -14,11 +15,13 @@ public:
         if(p1==p2) return;
         else par[p1]=p2;
     }
+
     // checking their nodes vs parents
     int find(int v,vector<int>&par){
         if(par[v]==-1) return v;
         return par[v]=find(par[v],par);
     }
+
     int findCircleNum(vector<vector<int>>& mat) {
         int n=mat.size();
         vector<int>par(n,-1);

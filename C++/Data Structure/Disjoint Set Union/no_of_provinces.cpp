@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
+
 class Solution {
 public:
     // finding nod1->par equaility with nod2->par;

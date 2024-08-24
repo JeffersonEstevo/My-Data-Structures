@@ -1,6 +1,5 @@
 // C++ implementation of Topological Sorting
 
-
 /* 
 Topological sorting of vertices/nodes of a Directed Acyclic Graph is an linear 
 ordering of the vertices/nodes v1,v2,v3....  in such a way, that if there is an edge

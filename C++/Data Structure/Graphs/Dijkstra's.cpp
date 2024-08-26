@@ -58,13 +58,17 @@ public:
         while (!unvisited.empty()) {
             int i = src, smallestVal = INT_MAX;
             for (auto v : unvisited)
+                
                 if (distances[v] < smallestVal) {
                     i = v;
                     smallestVal = distances[v];
                 }
+            
             unvisited.erase(i);
             visited.insert(i);
+            
             for (auto v : adjList[i])
+                
                 if (distances[i] + v.second < distances[v.first]) {
                     distances[v.first] = distances[i] + v.second;
                     predecessor[v.first] = i;

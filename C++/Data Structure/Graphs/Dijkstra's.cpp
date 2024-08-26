@@ -43,6 +43,7 @@ public:
         unordered_set<int> visited = { src }, unvisited;
         vector<int> distances(size, INT_MAX);
         vector<int>predecessor(size);
+        
         for (int i = 0; i < adjList.size(); i++)
             if (i != src) {
                 unvisited.insert(i);
@@ -52,6 +53,7 @@ public:
                         break;
                     }
             }
+        
         distances[src] = 0;
         while (!unvisited.empty()) {
             int i = src, smallestVal = INT_MAX;

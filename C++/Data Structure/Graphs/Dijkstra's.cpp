@@ -20,6 +20,7 @@ public:
     Graph(int size) {
         this->size = size;
     }
+
     void insert(int x, int y) {
         
         std::random_device ran;

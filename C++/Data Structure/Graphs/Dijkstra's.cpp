@@ -74,6 +74,7 @@ public:
                     predecessor[v.first] = i;
                 }
         }
+        
         int totalCost = 0;
         /*for (int i : distances) {
             totalCost += i;
@@ -82,16 +83,20 @@ public:
         vector<int> path;
         path.push_back(size - 1);
         int index = predecessor[size - 1];
+        
         while(index != src) {
             path.push_back(index);
             index = predecessor[index];
         }
+        
         path.push_back(src);
         std::reverse(path.begin(), path.end());
         cout << "Path";
+        
         for (int i : path) {
             cout << " " << i;
         }
+        
         totalCost += distances[path[path.size() - 1]];
         cout << " Total Cost: " << totalCost << endl;
     }

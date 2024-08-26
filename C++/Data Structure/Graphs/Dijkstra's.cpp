@@ -29,6 +29,7 @@ public:
         adjList[x][y] = range(rng); 
         adjList[y];
     }
+
     void printGraph() {
         for (int i = 0; i < adjList.size(); i++) {
             cout << "Current Node " << i <<  ":" << endl;

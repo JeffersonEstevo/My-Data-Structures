@@ -34,20 +34,17 @@ void dfs(int cur, int par) {
 		if (disc[child]) {
 			dfs(child, cur);
 			low[cur] = min(low[cur], low[child]);
-			if (low[child] >= disc[cur] and par != 0)
-			{
+			if (low[child] >= disc[cur] and par != 0){
 				//art point
 				art_p.pb(cur);
 			}
-			if (low[child] > disc[cur])
-			{
+			if (low[child] > disc[cur]){
 				//bridge
 				bridge.pb({cur, child});
 			}
 		}
 
 		else if (child != par) {
-
 			//backedge
 			//cycle  found
 			low[cur] = min(low[cur], disc[child]);

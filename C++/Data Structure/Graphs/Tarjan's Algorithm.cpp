@@ -53,8 +53,6 @@ void dfs(int cur, int par) {
 
 }
 
-
-
 int32_t main() {
 
 	int i, j, k, n, m, ans = 0, cnt = 0, sum = 0;
@@ -64,7 +62,6 @@ int32_t main() {
 		int x; int y;
 		gr[x].pb(y);
 		gr[y].pb(x);
-
 	}
 	dfs(1, 0);
 }

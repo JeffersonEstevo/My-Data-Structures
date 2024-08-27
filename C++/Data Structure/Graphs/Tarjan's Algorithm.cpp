@@ -17,6 +17,7 @@ Lowest Time[child] > Disc[parent]
 #include<bits/stdc++.h>
 
 using namespace std;
+
 #define pb push_back
 const int N = 100005, M = 22;
 #define int long long int

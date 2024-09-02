@@ -24,11 +24,9 @@ class Node{
 
 };
 
-void insertNode(Node* &tail,int element, int data)
-{
+void insertNode(Node* &tail,int element, int data){
     // assuming that the element is present in the list
-    if(tail == NULL)
-    {
+    if(tail == NULL){
         Node* newNode = new Node(data);
         tail = newNode;
         newNode -> next = newNode;

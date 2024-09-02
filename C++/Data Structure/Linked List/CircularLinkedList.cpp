@@ -67,21 +67,17 @@ void insertNode(Node* &tail,int element, int data){
            
     }
 
-    void deletetion(Node* &tail,int value)
-    {
+    void deletetion(Node* &tail,int value){
         // case for list is empty
-        if(tail == NULL)
-        {
+        if(tail == NULL){
             cout << "List is empty! Try something else " << endl; 
         }
         // assuming list in not empty
-        else
-        {
+        else{
             Node* previous = tail;
             //  current is the element infront of the previous element this is why we have written current = previous -> next (address)
             Node* current = previous -> next;
-            while(current -> data != value)
-            {
+            while(current -> data != value){
                 previous = current;
                 // previous holds the value of current before it's changed to next location
                 current = current -> next;
@@ -91,13 +87,11 @@ void insertNode(Node* &tail,int element, int data){
             previous -> next = current -> next;
             
             // 1 Node Linked List
-            if(tail == current)
-            {
+            if(tail == current){
                 tail = previous;
             }
             
-            if(tail == current)
-            {
+            if(tail == current){
                 tail = previous;
             }
             current -> next = NULL;

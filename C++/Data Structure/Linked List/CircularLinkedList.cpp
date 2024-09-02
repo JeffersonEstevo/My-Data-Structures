@@ -31,8 +31,7 @@ void insertNode(Node* &tail,int element, int data){
         tail = newNode;
         newNode -> next = newNode;
     }
-    else
-    {
+    else{
         // non empty list
         // assuming that the element is present in the list
 

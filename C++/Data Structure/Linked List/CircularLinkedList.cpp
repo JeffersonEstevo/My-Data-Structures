@@ -99,8 +99,7 @@ void insertNode(Node* &tail,int element, int data){
         }
     }
 
-int main()
-{
+int main(){
     Node* tail = NULL;
     // empty list case
     insertNode(tail,5,3);

@@ -54,15 +54,12 @@ void insertNode(Node* &tail,int element, int data){
 }
 
 // printing
-    void print(Node* tail)
-    {
+    void print(Node* tail){
         Node* temp = tail;
-        if(tail == NULL)
-        {
+        if(tail == NULL){
             cout << "List is empty " << endl;
         }
-        do
-        {
+        do{
             cout << tail -> data << " ";
             tail = tail -> next;
         } while (tail  != temp);

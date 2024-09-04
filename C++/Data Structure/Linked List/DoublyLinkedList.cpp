@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 class Node{
@@ -16,8 +17,7 @@ class Node{
 
     ~Node(){
         int value = this -> data;
-        if(next != NULL)
-        {
+        if(next != NULL){
             delete next;
             next = NULL;
         }
@@ -26,9 +26,8 @@ class Node{
 
 };
 
-// printing
-    void print(Node* head)
-    {
+    // printing
+    void print(Node* head){
         Node* temp = head;
         while(temp != NULL){
             cout << temp->data << " " ;
@@ -37,53 +36,44 @@ class Node{
         cout << endl;
     }
 
-// counting length
+    // counting length
     int length(Node* head){
         Node* temp = head;
         int count = 0;
-        while (temp != NULL)
-        {
+        while (temp != NULL){
             count++;
             temp = temp -> next;
         }
         return count;    
     }
 
-// insert at head
-    void insertAtHead(Node* &head, Node* &tail, int data)
-    {
-        if(head == NULL)
-        {
+    // insert at head
+    void insertAtHead(Node* &head, Node* &tail, int data){
+        if(head == NULL){
             // to skip null point exception we will make an new node if the head which is passed is pointing to null
             Node* temp = new Node(data);
             head = temp;
             tail = temp;
         }
-        else
-        {
+        else{
+            Node* temp = new Node(data);
 
-        Node* temp = new Node(data);
-
-        // temp next address positon now points to head
-        temp -> next = head;
-        // head previous points to temp;
-        head -> previous = temp;
-        head = temp;
-
+            // temp next address positon now points to head
+            temp -> next = head;
+            // head previous points to temp;
+            head -> previous = temp;
+            head = temp;
         }
     }
 
-// inserting at tail
-    void insertAtTail(Node* &tail,Node* &head, int data)
-    {
-        if(tail == NULL)
-        {
+    // inserting at tail
+    void insertAtTail(Node* &tail,Node* &head, int data){
+        if(tail == NULL){
             Node* temp = new Node(data);
             tail = temp;
             head = temp;
         }
-        else
-        {
+        else{
             Node* temp = new Node(data);
             tail -> next = temp;
             temp -> previous = tail;
@@ -91,27 +81,24 @@ class Node{
         }
     }
 
-// insertingAtPosition
-    void insertAtPosition(Node* &tail, Node* &head, int position ,int data)
-    {
+    // insertingAtPosition
+    void insertAtPosition(Node* &tail, Node* &head, int position ,int data){
         // insert at head
-        if(position == 1)
-        {
+        if(position == 1){
             insertAtHead(head,tail,data);
             return ;
         }
 
         Node* temp = head;
         int count = 0;
-        while(count != position-1)
-        {
+        
+        while(count != position-1){
             temp = temp -> next;
             count++;
         }
 
         // insert at tail
-        if(temp -> next == NULL)
-        {
+        if(temp -> next == NULL){
             insertAtTail(tail,head,data);
             return ;
         }
@@ -127,24 +114,21 @@ class Node{
 
 
     // deletion or making the memory free
-    void deletion(Node* &head,int position)
-    {
-        if(position == 1)
-        {
+    void deletion(Node* &head,int position){
+        if(position == 1){
             Node* temp = head;
             head = temp -> next;
             temp -> next -> previous = NULL;
             temp -> next = NULL;
             delete temp;
         }
-        else
-        {
+        else{
             Node* current = head;
             Node* previous = NULL;
 
             int count = 1;
-            while (count < position)
-            {
+            
+            while (count < position){
                 previous = current;
                 current = current -> next;
                 count++;
@@ -159,8 +143,7 @@ class Node{
 
 
 
-int main()
-{
+int main(){    
     Node* node1 = new Node(10);
     Node* head = node1;
     Node* tail = node1;

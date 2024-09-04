@@ -39,8 +39,7 @@ class Node{
     }
 
 // counting length
-    int length(Node* head)
-    {
+    int length(Node* head){
         Node* temp = head;
         int count = 0;
         while (temp != NULL)

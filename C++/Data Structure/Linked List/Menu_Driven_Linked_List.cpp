@@ -138,12 +138,13 @@ void del_val(Node **head, int val){
     cout<< "\nEmpty List\n";
     return;
   }
+  
   Node *prev,*temp = *head;
-  while (temp->next != *head && temp->data != val) 
-  {   
+  while (temp->next != *head && temp->data != val) {   
     prev = temp; 
     temp = temp->next; 
   }
+  
   if(temp->data != val){
     cout<<"Not found";
   }else if(temp == (*head)){
@@ -175,6 +176,7 @@ void display(Node *head){
   if(head == NULL){
     cout<<"List is Empty\n";
   }
+  
   while(temp!= NULL){
     cout << temp->data<<' ';
     temp = temp->next;

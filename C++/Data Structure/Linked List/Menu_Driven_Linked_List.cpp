@@ -98,27 +98,32 @@ int del_beg(Node **head){
     cout<<"List is Empty"<<endl;
     return -1;
   } 
+  
   (*head)->next->prev = (*head)->prev;
   (*head) = (*head)->next;
+  
   // temp->next->prev = (*head)->prev;
   (*head) = temp->next;
   int x  = temp->data;
   delete temp;
+  
   // (*head) = (*head)->next;
   return x;
 }
+
 // Delete end node
 int del_end(Node **head){
   if(*head == NULL){
     cout<< "\nEmpty List\n";
     return -1;
   }
+  
   Node *prev,*temp = *head;
-  while (temp->next != (*head))
-  {
+  while (temp->next != (*head)){
     prev = temp;
     temp = temp->next;
   }
+  
   int x ;
   prev->next=(*head);
   (*head)->prev=prev;

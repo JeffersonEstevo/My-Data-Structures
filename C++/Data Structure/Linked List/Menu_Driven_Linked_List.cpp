@@ -75,19 +75,22 @@ void insert_before(Node *head, int data, int wall){
   if(head==NULL)  return;
   Node *temp = new Node;
   temp = head;
-  if(head->data == wall)
-  {
+  
+  if(head->data == wall){
     insert_beg(&head, data);
   }
+  
   while(temp->next->data != wall){
     temp = temp->next;
   }
+  
   Node* ptr = create_node(data);
   ptr->next        = temp->next;
   temp->next->prev = ptr;
   ptr->prev        = temp;
   temp->next       = ptr;  
 }
+
 // Delete head node
 int del_beg(Node **head){
   Node *temp = *head;

@@ -50,22 +50,26 @@ void insert_beg(Node **head, int data){
     *head = temp;
   }
 }
+
 // Append new node to list
 void insert_end(Node **head, int data){
   if(head == NULL){
     (*head) = create_node(data);
     return;
   }
+  
   Node *temp = *head;
   while(temp->next!= (*head)){
     temp = temp->next;
   }
+  
   Node* new_node = create_node(data);
   new_node->next = (*head);
   new_node->prev = temp;
   (*head)->prev     = new_node;
   temp->next     = new_node; 
 }
+
 // Insert before first occurence of passed value
 void insert_before(Node *head, int data, int wall){
   if(head==NULL)  return;

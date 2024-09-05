@@ -24,8 +24,7 @@ SINGLY LINKED LIST ADT IMPLEMENTATION                 ^.^.^.^.^.^.^.^.^.^.^.^.^
 ^.^.^.^.^.^.^.^.^.^.^.^.^.^.^.^.^.^ ^. By:- NAMAN JAIN
 *******************************************************************************
 */
-struct Node
-{
+struct Node{
   int data;
   Node *next,*prev;
 };
@@ -38,6 +37,7 @@ Node *create_node(int x){
   new_node->prev = new_node;
   return new_node;
 }
+
 void insert_beg(Node **head, int data){
   if(head == NULL){
     *head = create_node(data);

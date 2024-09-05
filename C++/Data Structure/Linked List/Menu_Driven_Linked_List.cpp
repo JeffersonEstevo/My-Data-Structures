@@ -199,8 +199,7 @@ void menuItems()
 )";
 }
 
-int main()
-{
+int main(){
   // fio;
   menuItems();
   int choice;
@@ -209,8 +208,7 @@ int main()
   do{
     cout<<"Enter your choice:";
     cin>>choice;
-    switch (choice)
-    {
+    switch (choice){
     case 1:
       cout<<"Enter value to be inserted at beginning:=";
       cin>>val;

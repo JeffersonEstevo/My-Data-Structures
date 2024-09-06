@@ -4,6 +4,7 @@ using namespace std;
 struct Node {
     int data;
     struct Node* next;
+
     Node(int data){
         this->data = data;
         next = NULL;
@@ -28,8 +29,7 @@ struct LinkedList {
         head = prev;
     }
  
-    void print()
-    {
+    void print(){
         struct Node* temp = head;
         while (temp != NULL) {
             cout << temp->data << " ";

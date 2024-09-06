@@ -47,8 +47,7 @@ struct LinkedList {
     }
 };
  
-int main()
-{
+int main(){
     LinkedList ll;
     ll.push(20);
     ll.push(4);

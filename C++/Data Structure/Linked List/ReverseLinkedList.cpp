@@ -15,8 +15,7 @@ struct LinkedList {
     Node* head;
     LinkedList() { head = NULL; }
  
-    void reverse()
-    {
+    void reverse(){
         Node* current = head;
         Node *prev = NULL, *next = NULL;
  

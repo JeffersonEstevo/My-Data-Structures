@@ -37,8 +37,7 @@ struct LinkedList {
         }
     }
  
-    void push(int data)
-    {
+    void push(int data){
         Node* temp = new Node(data);
         temp->next = head;
         head = temp;

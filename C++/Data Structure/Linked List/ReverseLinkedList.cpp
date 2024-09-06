@@ -4,8 +4,7 @@ using namespace std;
 struct Node {
     int data;
     struct Node* next;
-    Node(int data)
-    {
+    Node(int data){
         this->data = data;
         next = NULL;
     }

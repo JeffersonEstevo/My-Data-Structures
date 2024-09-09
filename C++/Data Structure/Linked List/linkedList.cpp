@@ -129,8 +129,7 @@ class Linked_list {
         head = NULL;
     }
 
-    void reverse()
-    {
+    void reverse(){
         node *aux, *current=head, *previous=NULL;
 
         while(current!=NULL)

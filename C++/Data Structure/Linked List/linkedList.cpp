@@ -2,6 +2,7 @@
     * Linked List implentation in C++    
 */
 #include <iostream>
+
 using namespace std;
 
 struct node {

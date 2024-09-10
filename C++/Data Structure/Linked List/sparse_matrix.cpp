@@ -90,11 +90,9 @@ void print_matrix(row_list *start)
     }
 }
 
-int main()
-{
+int main(){
     // R = number of rows and C = number of columns
-    int sparse_matrix[R][C] = 
-    {
+    int sparse_matrix[R][C] = {
         {0 , 0 , 3 , 0 , 4 },
         {0 , 0 , 5 , 7 , 0 },
         {0 , 0 , 0 , 0 , 0 },

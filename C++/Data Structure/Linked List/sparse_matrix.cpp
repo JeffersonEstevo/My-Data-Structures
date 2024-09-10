@@ -40,8 +40,7 @@ void create_value_node(int data, int j, row_list **z){
 }
 
 void create_row_list(row_list **start, int row, int col, int sparse_matrix[R][C]){
-    for (int i = 0; i < row; i++)
-    {
+    for (int i = 0; i < row; i++){
         row_list *z, *r;
         // Create a new row node and assign data to it
         z = new row_list;
@@ -53,8 +52,7 @@ void create_row_list(row_list **start, int row, int col, int sparse_matrix[R][C]
         if (i == 0)
         *start = z;
         
-        else
-        {
+        else{
             r = *start;
             while(r->link_down != NULL)
                 r = r->link_down;
@@ -62,10 +60,8 @@ void create_row_list(row_list **start, int row, int col, int sparse_matrix[R][C]
         }
         
         // To find out the non-zero values in that particular row.
-        for (int j = 0; j < col; j++)
-        {
-            if (sparse_matrix[i][j] != 0)
-            {
+        for (int j = 0; j < col; j++){
+            if (sparse_matrix[i][j] != 0){
                 create_value_node(sparse_matrix[i][j], j, &z);
             }
         }

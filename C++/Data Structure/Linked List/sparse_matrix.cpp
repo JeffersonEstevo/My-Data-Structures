@@ -39,8 +39,7 @@ void create_value_node(int data, int j, row_list **z){
     }
 }
 
-void create_row_list(row_list **start, int row, int col, int sparse_matrix[R][C])
-{
+void create_row_list(row_list **start, int row, int col, int sparse_matrix[R][C]){
     for (int i = 0; i < row; i++)
     {
         row_list *z, *r;

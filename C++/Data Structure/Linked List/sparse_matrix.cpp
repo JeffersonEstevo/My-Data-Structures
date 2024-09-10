@@ -18,8 +18,7 @@ class row_list{
     value_list *link_right;
 };
 
-void create_value_node(int data, int j, row_list **z)
-{
+void create_value_node(int data, int j, row_list **z){
     value_list *temp, *d;
 
     // Create a new column node and assign data to it

@@ -28,8 +28,7 @@ void create_value_node(int data, int j, row_list **z){
     temp->next = NULL;
 
     // If the newly created node is the first node of the row, then directly link it otherwise traverse.
-    if ((*z)->link_right == NULL) 
-    {
+    if ((*z)->link_right == NULL) {
         (*z)->link_right = temp;
     }
     else

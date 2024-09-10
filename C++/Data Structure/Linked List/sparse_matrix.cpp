@@ -31,8 +31,7 @@ void create_value_node(int data, int j, row_list **z){
     if ((*z)->link_right == NULL) {
         (*z)->link_right = temp;
     }
-    else
-    {
+    else{
         d = (*z)->link_right;
         while(d->next != NULL)
             d = d->next;

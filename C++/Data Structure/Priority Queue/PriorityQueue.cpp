@@ -44,8 +44,7 @@ void application_of_max_heap() {
 }
 
 // Using min-heap concept
-void application_of_min_heap()
-{
+void application_of_min_heap(){
     // Syntax of creating min-heap priority queue
     std::priority_queue <int, vector<int>, greater<int>> min_pq; 
     

@@ -21,8 +21,7 @@ There are a few basic methods in the STL library for priority queues, these are:
 using namespace std;
 
 // By default C++ uses max-heap
-void application_of_max_heap() 
-{
+void application_of_max_heap() {
     // Creation of priority queue named max_pq
     std::priority_queue<int> max_pq;
 

@@ -66,8 +66,7 @@ void application_of_min_heap(){
 }
 
 // Driver function
-int main()
-{
+int main(){
     // Using max-heap method we can print out the elements in non-increasing order
     application_of_max_heap();
 

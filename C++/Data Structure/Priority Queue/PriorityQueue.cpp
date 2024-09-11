@@ -14,7 +14,6 @@ There are a few basic methods in the STL library for priority queues, these are:
 */
 
 
-
 #include <iostream>
 #include <queue>
 #include <vector>

@@ -26,8 +26,7 @@ int Dequeue(){
         cout << "Press 1 to dequeue ";
         int op;
         cin >> op;
-        if (op == 1)
-        {
+        if (op == 1){
             if (!s1.empty())
             {
                 cout << s1.top() << endl; // remove the top element

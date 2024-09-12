@@ -9,8 +9,7 @@
 using namespace std;
 stack<int> s1, s2;
 
-void Enqueue(int n)
-{
+void Enqueue(int n){
     while (!s1.empty())
     {
         s2.push(s1.top()); //push all elements from s1 to s2

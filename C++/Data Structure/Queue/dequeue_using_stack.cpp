@@ -27,8 +27,7 @@ int Dequeue(){
         int op;
         cin >> op;
         if (op == 1){
-            if (!s1.empty())
-            {
+            if (!s1.empty()){
                 cout << s1.top() << endl; // remove the top element
                 s1.pop();
             }

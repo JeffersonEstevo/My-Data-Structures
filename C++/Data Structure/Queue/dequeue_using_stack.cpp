@@ -15,8 +15,7 @@ void Enqueue(int n){
         s1.pop();
     }
     s1.push(n); // push the element to be enqueue to s1
-    while (!s2.empty())
-    {
+    while (!s2.empty()){
         s1.push(s2.top()); // push all elements from s2 to s1.
         s2.pop();
     }

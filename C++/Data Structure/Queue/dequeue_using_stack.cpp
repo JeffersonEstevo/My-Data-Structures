@@ -31,14 +31,12 @@ int Dequeue(){
                 cout << s1.top() << endl; // remove the top element
                 s1.pop();
             }
-            else
-            {
+            else{
                 cout << "No element to dequeue";
                 return 0;
             }
         }
-        else
-        {
+        else{
             return 0;
         }
     }

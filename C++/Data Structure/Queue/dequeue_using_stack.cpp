@@ -22,8 +22,7 @@ void Enqueue(int n){
 }
 
 int Dequeue(){
-    while (1)
-    {
+    while (1){
         cout << "Press 1 to dequeue ";
         int op;
         cin >> op;

@@ -4,10 +4,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printQueue(queue<int> q) // for printing the elements
-{
-    while (!q.empty()) // While the queue is not empty we print the front element by removing the elements
-    {
+void printQueue(queue<int> q){ // for printing the elements
+    while (!q.empty()){ // While the queue is not empty we print the front element by removing the elements
+    
         cout << q.front() << " ";
         q.pop();
     }

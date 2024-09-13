@@ -28,8 +28,7 @@ int main(){
         if (n == 2){
             q.pop(); // pop removes the front element from the queue
         }
-        if (n == 3)
-        {
+        if (n == 3){
             printQueue(q);
         }
         if (n == 0)

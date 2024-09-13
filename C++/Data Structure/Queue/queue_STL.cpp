@@ -15,8 +15,7 @@ void printQueue(queue<int> q){ // for printing the elements
 
 int main(){
     queue<int> q; // Queue of type int
-    while (1)
-    {
+    while (1){
         cout << "Press 1 to enqueue\n2 to dequeue \n3 to print\n0 to exit" << endl;
         int n;
         cin >> n;

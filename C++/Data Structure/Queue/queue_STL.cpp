@@ -19,15 +19,13 @@ int main(){
         cout << "Press 1 to enqueue\n2 to dequeue \n3 to print\n0 to exit" << endl;
         int n;
         cin >> n;
-        if (n == 1)
-        {
+        if (n == 1){
             cout << "Enter the element to be pushed" << endl;
             int num;
             cin >> num;
             q.push(num); // push() is used to push the elements at the back of the queue
         }
-        if (n == 2)
-        {
+        if (n == 2){
             q.pop(); // pop removes the front element from the queue
         }
         if (n == 3)

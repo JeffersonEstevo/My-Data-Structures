@@ -31,8 +31,7 @@ int main(){
         if (n == 3){
             printQueue(q);
         }
-        if (n == 0)
-        {
+        if (n == 0){
             return 0;
         }
     }

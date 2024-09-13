@@ -13,8 +13,7 @@ void printQueue(queue<int> q){ // for printing the elements
     cout << endl;
 }
 
-int main()
-{
+int main(){
     queue<int> q; // Queue of type int
     while (1)
     {

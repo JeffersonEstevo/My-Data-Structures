@@ -12,8 +12,7 @@ class Stack {
 }; 
 
 // Stack Operations 
-Stack* createStack( unsigned capacity ) 
-{ 
+Stack* createStack( unsigned capacity ) { 
 	Stack* stack = new Stack(); 
 
 	if (!stack) return NULL; 

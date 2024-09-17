@@ -26,25 +26,21 @@ Stack* createStack( unsigned capacity ) {
 	return stack; 
 } 
 
-int isEmpty(Stack* stack) 
-{ 
+int isEmpty(Stack* stack){ 
 	return stack->top == -1 ; 
 } 
 
-int peek(Stack* stack) 
-{ 
+int peek(Stack* stack){ 
 	return stack->array[stack->top]; 
 } 
 
-int pop(Stack* stack) 
-{ 
+int pop(Stack* stack){ 
 	if (!isEmpty(stack)) 
 		return stack->array[stack->top--] ; 
 	return '$'; 
 } 
 
-void push(Stack* stack,int op) 
-{ 
+void push(Stack* stack,int op) { 
 	stack->array[++stack->top] = op; 
 } 
 

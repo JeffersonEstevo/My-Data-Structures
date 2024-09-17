@@ -96,8 +96,7 @@ int evaluatePostfix(char* exp){
 } 
 
 // Driver code 
-int main() 
-{ 
+int main() { 
 	char exp[] = "100 200 + 2 / 5 * 7 +"; 
 	cout << evaluatePostfix(exp) << endl; 
 	return 0; 

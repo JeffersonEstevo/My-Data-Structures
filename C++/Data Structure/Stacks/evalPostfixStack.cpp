@@ -4,8 +4,7 @@
 using namespace std; 
 
 // Stack type 
-class Stack 
-{ 
+class Stack { 
 	public: 
 	int top; 
 	unsigned capacity; 

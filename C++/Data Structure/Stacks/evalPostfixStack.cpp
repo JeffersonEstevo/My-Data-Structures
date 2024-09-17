@@ -47,8 +47,7 @@ void push(Stack* stack,int op) {
 
 // The main function that returns value 
 // of a given postfix expression 
-int evaluatePostfix(char* exp) 
-{ 
+int evaluatePostfix(char* exp){ 
 	// Create a stack of capacity equal to expression size 
 	Stack* stack = createStack(strlen(exp)); 
 	int i; 
@@ -57,21 +56,18 @@ int evaluatePostfix(char* exp)
 	if (!stack) return -1; 
 
 	// Scan all characters one by one 
-	for (i = 0; exp[i]; ++i) 
-	{ 
+	for (i = 0; exp[i]; ++i) { 
 		//if the character is blank space then continue 
 		if(exp[i] == ' ')continue; 
 		
 		// If the scanned character is an 
 		// operand (number here),extract the full number 
 		// Push it to the stack. 
-		else if (isdigit(exp[i])) 
-		{ 
+		else if (isdigit(exp[i])){ 
 			int num=0; 
 			
 			//extract full number 
-			while(isdigit(exp[i])) 
-			{ 
+			while(isdigit(exp[i])){ 
 			num = num * 10 + (int)(exp[i] - '0'); 
 				i++; 
 			} 
@@ -83,13 +79,11 @@ int evaluatePostfix(char* exp)
 		
 		// If the scanned character is an operator, pop two 
 		// elements from stack apply the operator 
-		else
-		{ 
+		else{ 
 			int val1 = pop(stack); 
 			int val2 = pop(stack); 
 			
-			switch (exp[i]) 
-			{ 
+			switch (exp[i]) { 
 			case '+': push(stack, val2 + val1); break; 
 			case '-': push(stack, val2 - val1); break; 
 			case '*': push(stack, val2 * val1); break; 

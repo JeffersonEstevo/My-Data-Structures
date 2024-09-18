@@ -9,8 +9,7 @@ void showstack(stack <int> s) {
 	} 
 } 
 
-int main () 
-{ 
+int main (){ 
 	//  push element in stack
 	stack <int> s; 
 	s.push(10); 

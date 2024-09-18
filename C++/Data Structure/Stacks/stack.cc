@@ -17,18 +17,18 @@ int main (){
 	s.push(20); 
 	s.push(5); 
 	s.push(1); 
-
+	
 	cout << "The stack is : "; 
 	showstack(s); 
-
+	
 	cout << "\ns.size() : " << s.size(); 
 	cout << "\ns.top() : " << s.top(); 
-
-
+	
+	
 	cout << "\ns.pop() : "; 
 	s.pop(); 
 	s.pop();
 	showstack(s); 
-
+	
 	return 0; 
 } 

@@ -2,8 +2,7 @@
 #include <bits/stdc++.h> 
 using namespace std; 
 
-void showstack(stack <int> s) 
-{ 
+void showstack(stack <int> s) { 
 	while (!s.empty()) 
 	{ 
 		cout << '\t' << s.top(); 

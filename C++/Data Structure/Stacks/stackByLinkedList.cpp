@@ -5,6 +5,7 @@ using namespace std;
 
 // linkedList class for stack
 class stackNode{
+
     // data and pointer part of node
     int data;
     stackNode *next;

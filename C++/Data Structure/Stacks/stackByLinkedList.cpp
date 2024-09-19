@@ -1,7 +1,6 @@
 // stack implementation using linkedlist from scratch
 
 
-
 #include<bits/stdc++.h>
 using namespace std;
 

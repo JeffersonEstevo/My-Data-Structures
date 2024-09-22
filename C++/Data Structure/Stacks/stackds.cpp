@@ -10,8 +10,8 @@ class Stack{
     int top;
 
 public:
-    Stack() //default constructor
-    {
+    Stack() {//default constructor
+    
         top = -1;
     }
 

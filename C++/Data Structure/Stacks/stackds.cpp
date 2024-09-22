@@ -14,8 +14,8 @@ public:
         top = -1;
     }
 
-    bool isEmpty() //check if stack is Empty
-    {
+    bool isEmpty() {//check if stack is Empty
+    
         if (top == -1)
         {
             cout << "Stack is Empty\n";

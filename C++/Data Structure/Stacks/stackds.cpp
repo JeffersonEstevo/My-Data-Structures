@@ -5,8 +5,7 @@
 
 using namespace std;
 
-class Stack
-{
+class Stack{
     int item[SIZE];
     int top;
 

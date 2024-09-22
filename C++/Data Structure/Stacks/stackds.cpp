@@ -23,10 +23,9 @@ public:
         return false;
     }
 
-    bool isFull()   //check if stack in Full   
-    {
-        if (top == SIZE - 1)
-        {
+    bool isFull(){//check if stack in Full   
+    
+        if (top == SIZE - 1){
             cout << "Stack is full\n";
             return true;
         }
@@ -34,7 +33,7 @@ public:
     }
 
     void push(int val)  {//push elements into the stack
-    
+
         if (isFull()){
             exit(0);
         }
@@ -42,11 +41,10 @@ public:
         item[top] = val;
     }
 
-    int pop()   //pop elements from the stack
-    {
+    int pop(){//pop elements from the stack
+    
         int val;
-        if (isEmpty())
-        {
+        if (isEmpty()){
             exit(0);
         }
         val = item[top];
@@ -54,11 +52,10 @@ public:
         return val;
     }
 
-    int peek()  //return element at the top of stack
-    {
+    int peek(){//return element at the top of stack
+    
         int val;
-        if (isEmpty())
-        {
+        if (isEmpty()){
             exit(0);
         }
         val = item[top];
@@ -66,8 +63,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Stack s;
     s.push(10);
     s.push(30);

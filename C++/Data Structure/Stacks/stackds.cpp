@@ -33,10 +33,9 @@ public:
         return false;
     }
 
-    void push(int val)  //push elements into the stack
-    {
-        if (isFull())
-        {
+    void push(int val)  {//push elements into the stack
+    
+        if (isFull()){
             exit(0);
         }
         top++;

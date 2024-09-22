@@ -11,7 +11,6 @@ class Stack{
 
 public:
     Stack() {//default constructor
-    
         top = -1;
     }
 

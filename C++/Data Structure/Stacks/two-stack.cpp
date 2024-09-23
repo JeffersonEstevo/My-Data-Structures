@@ -50,8 +50,7 @@ public:
 	} 
 
 	// pop an element from first stack in O(1) 
-	int pop_S1() 
-	{ 
+	int pop_S1(){ 
         //check if there is atleast 1 element
 		if (top1 >= 0) { 
 			int x = array[top1]; 

@@ -23,8 +23,7 @@ public:
 	} 
 
 	//  push an element x to stack1 in O(1) 
-	void push_S1(int x) 
-	{ 
+	void push_S1(int x){ 
 		// There is at least one empty space for new element 
 		if (top1 < top2 - 1) { 
 			top1++; 

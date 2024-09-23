@@ -15,8 +15,7 @@ class twoStacks {
 	int top1, top2; 
 
 public: 
-	twoStacks(int n)  
-	{ 
+	twoStacks(int n){ 
 		size = n; 
 		array = new int[n]; 
 		top1 = -1; 

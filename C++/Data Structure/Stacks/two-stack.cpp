@@ -103,19 +103,16 @@ public:
 }; 
 
 /* Driver code */
-int main() 
-{ 
+int main() { 
     int n;
     cout<<"Enter the capacity of the array"<<endl;
     cin>>n;
 	twoStacks ts(n); 
     int i=0;
-    while(1)
-    {
+    while(1){
         cout<<"Enter \n1- To push elements to stack 1\n2- To pop elements from stack 1\n3- To push elements to stack 2\n4- To pop elements from stack 2\n5- Display Stack 1\n6- Display Stack 2\n7- To exit\n";
         cin>>i;
-        switch (i)
-        {
+        switch (i){
         case 1:
             int val;
             cout<<"Enter element to be pushed\n";

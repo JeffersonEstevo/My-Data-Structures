@@ -90,8 +90,7 @@ public:
 
     } 
     //display stack 2
-    void display_s2()
-    {
+    void display_s2(){
         cout<<"Stack 2: ";
         if(top1==size)
         cout<<"Stack 2 empty\n";

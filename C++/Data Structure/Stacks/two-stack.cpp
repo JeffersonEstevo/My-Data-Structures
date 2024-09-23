@@ -65,8 +65,7 @@ public:
 	} 
 
 	//  pop an element from second stack in O(1) 
-	int pop_S2() 
-	{ 
+	int pop_S2(){ 
 		if (top2 < size) { 
 			int x = array[top2]; 
 			top2++;

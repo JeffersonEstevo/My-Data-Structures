@@ -37,8 +37,7 @@ public:
 	} 
 
 	// push an element x to stack2 in O(1) 
-	void push_S2(int x) 
-	{ 
+	void push_S2(int x) { 
 
 		if (top1 < top2 - 1) { 
 			top2--; 

@@ -78,8 +78,7 @@ public:
 		} 
 	}
     //display stack 1
-    void display_s1()
-    {
+    void display_s1(){
         cout<<"Stack 1: ";
         if(top1==-1)
         cout<<"Stack 1 empty\n";

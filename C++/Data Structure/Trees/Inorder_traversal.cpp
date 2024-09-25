@@ -43,8 +43,7 @@ void binaryTree::insertKeys(vector<int> keys){
 // as the key (argument) and child nodes as NULL.
 // For all calls other than the first time, it further calls insertKey(int, node*).
 void binaryTree::insertKey(int key){
-    if (root != NULL)
-    {
+    if (root != NULL){
         insertKey(key, root);
     }
     else

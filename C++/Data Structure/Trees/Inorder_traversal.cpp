@@ -42,8 +42,7 @@ void binaryTree::insertKeys(vector<int> keys){
 // initializes root to point to a node data type. This node data type gets its key_value
 // as the key (argument) and child nodes as NULL.
 // For all calls other than the first time, it further calls insertKey(int, node*).
-void binaryTree::insertKey(int key)
-{
+void binaryTree::insertKey(int key){
     if (root != NULL)
     {
         insertKey(key, root);

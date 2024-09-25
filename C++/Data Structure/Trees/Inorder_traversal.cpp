@@ -5,8 +5,7 @@
 using namespace std;
 
 // Every node of the binary tree is represented by a 'node' data type
-struct node
-{
+struct node{
     int key_value; // Value the node holds
     node *left;    // Address of its left child
     node *right;   // Address of its right child

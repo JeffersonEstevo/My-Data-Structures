@@ -46,8 +46,7 @@ void binaryTree::insertKey(int key){
     if (root != NULL){
         insertKey(key, root);
     }
-    else
-    {
+    else{
         root = new node;
         root->key_value = key;
         root->left = NULL;

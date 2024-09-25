@@ -60,28 +60,22 @@ void binaryTree::insertKey(int key){
 // If the key is greater than or equal to the key_value at a node, the function calls itself with its right subtree.
 // When it reaches a suitable place, it creates a new node. This node gets key_value as the key and child nodes as NULL.
 void binaryTree::insertKey(int key, node *leaf){
-    if (key < leaf->key_value)
-    {
-        if (leaf->left != NULL)
-        {
+    if (key < leaf->key_value){
+        if (leaf->left != NULL){
             insertKey(key, leaf->left);
         }
-        else
-        {
+        else{
             leaf->left = new node;
             leaf->left->key_value = key;
             leaf->left->left = NULL;
             leaf->left->right = NULL;
         }
     }
-    else if (key >= leaf->key_value)
-    {
-        if (leaf->right != NULL)
-        {
+    else if (key >= leaf->key_value){
+        if (leaf->right != NULL){
             insertKey(key, leaf->right);
         }
-        else
-        {
+        else{
             leaf->right = new node;
             leaf->right->key_value = key;
             leaf->right->left = NULL;
@@ -91,8 +85,7 @@ void binaryTree::insertKey(int key, node *leaf){
 }
 
 // Calls inOrderTraversal_recursive, a private member-function.
-void binaryTree::inOrderTraversal_recursive()
-{
+void binaryTree::inOrderTraversal_recursive(){
     cout << "InOrderTraversal (recursive): ";
     inOrderTraversal_recursive(root);
     cout << endl;
@@ -100,10 +93,8 @@ void binaryTree::inOrderTraversal_recursive()
 
 // For a particular node, the function prints its key_value and recursively calls
 // its left and right subtrees (in that order).
-void binaryTree::inOrderTraversal_recursive(node *leaf)
-{
-    if (leaf != NULL)
-    {
+void binaryTree::inOrderTraversal_recursive(node *leaf){
+    if (leaf != NULL){
         inOrderTraversal_recursive(leaf->left);
         cout << leaf->key_value << " ";
         inOrderTraversal_recursive(leaf->right);
@@ -111,23 +102,19 @@ void binaryTree::inOrderTraversal_recursive(node *leaf)
 }
 
 // The iterative in-order traversal function.
-void binaryTree::inOrderTraversal_iterative()
-{
+void binaryTree::inOrderTraversal_iterative(){
     cout << "InOrderTraversal (iterative): ";
     if (root == NULL)
         return;
     stack<node *> nodeAddr;
     node *currentNode = root;
 
-    while (currentNode != NULL || !nodeAddr.empty())
-    {
-        while (currentNode != NULL)
-        {
+    while (currentNode != NULL || !nodeAddr.empty()){
+        while (currentNode != NULL){
             nodeAddr.push(currentNode);
             currentNode = currentNode->left;
         }
-        if (!nodeAddr.empty())
-        {
+        if (!nodeAddr.empty()){
             currentNode = nodeAddr.top();
             nodeAddr.pop();
             cout << currentNode->key_value << " ";

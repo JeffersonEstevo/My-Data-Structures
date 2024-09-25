@@ -11,8 +11,7 @@ struct node{
     node *right;   // Address of its right child
 };
 
-class binaryTree
-{
+class binaryTree{
 private:
     node *root;
     void insertKey(int key, node *leaf);

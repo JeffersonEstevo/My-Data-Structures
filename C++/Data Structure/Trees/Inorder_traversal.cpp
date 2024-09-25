@@ -59,8 +59,7 @@ void binaryTree::insertKey(int key){
 // If the key is less than the key_value at a node, the function calls itself with its left subtree.
 // If the key is greater than or equal to the key_value at a node, the function calls itself with its right subtree.
 // When it reaches a suitable place, it creates a new node. This node gets key_value as the key and child nodes as NULL.
-void binaryTree::insertKey(int key, node *leaf)
-{
+void binaryTree::insertKey(int key, node *leaf){
     if (key < leaf->key_value)
     {
         if (leaf->left != NULL)

@@ -39,8 +39,8 @@ private:
         }
         queue<Node*> nodes; //empty queue for level order traversal of tree
         nodes.push(root); //enqueue the trees root
-        while(!nodes.empty()) //once the queue is empty, traversal is complete
-        {
+        while(!nodes.empty()){ //once the queue is empty, traversal is complete
+   
             Node* node = nodes.front();
             cout << node->val << " "; //print value of front of queue
             nodes.pop(); //dequeue front element

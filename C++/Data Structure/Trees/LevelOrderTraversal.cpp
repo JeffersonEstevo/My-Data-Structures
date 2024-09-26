@@ -57,8 +57,7 @@ private:
 
 public:
     BinarySearchTree():treeRoot(nullptr){}
-    void insert(int key)
-    {
+    void insert(int key){
         treeRoot = insertNode(key, treeRoot);
     }
     void levelOrder()

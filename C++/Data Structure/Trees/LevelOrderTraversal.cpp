@@ -19,8 +19,7 @@ private:
     Node* treeRoot;
     //for the purposes of only demonstrating the level order traversal algorithm,
     //removing a node will not be implemented
-    Node* insertNode(int key, Node* root)
-    {
+    Node* insertNode(int key, Node* root){
         if(root == nullptr){
             return new Node(key);
         }

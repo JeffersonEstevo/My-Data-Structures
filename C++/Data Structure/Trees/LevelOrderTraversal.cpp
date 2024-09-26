@@ -32,8 +32,7 @@ private:
         return root;
     }
     //function to print level order traversal of a BST
-    void printLevelOrder(Node* root)
-    {
+    void printLevelOrder(Node* root){
         //base case
         if(root == nullptr){
             return;

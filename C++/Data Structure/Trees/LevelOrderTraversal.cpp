@@ -60,8 +60,7 @@ public:
     void insert(int key){
         treeRoot = insertNode(key, treeRoot);
     }
-    void levelOrder()
-    {
+    void levelOrder(){
         printLevelOrder(treeRoot);
     }
 

@@ -25,8 +25,7 @@ public:
 };
 
 // Constructor. Initializes root to NULL.
-binaryTree::binaryTree()
-{
+binaryTree::binaryTree(){
     root = NULL;
 }
 

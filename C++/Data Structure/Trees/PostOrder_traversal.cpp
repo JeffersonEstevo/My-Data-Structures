@@ -128,8 +128,7 @@ void binaryTree::postOrderTraversal_iterative(){
     }
 }
 
-int main()
-{
+int main(){
     binaryTree Tree;
     vector<int> elements = {25, 15, 50, 10, 22, 35, 70, 4, 12, 18, 24, 31, 44, 66, 80}; // The elements to be inserted in the tree
     Tree.insertKeys(elements);

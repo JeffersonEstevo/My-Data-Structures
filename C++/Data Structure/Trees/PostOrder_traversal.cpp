@@ -84,8 +84,7 @@ void binaryTree::insertKey(int key, node *leaf){
 }
 
 // Recursive Post-Order Traversal
-void binaryTree::postOrderTraversal_recursive()
-{
+void binaryTree::postOrderTraversal_recursive(){
     cout << "PostOrderTraversal (recursive): ";
     postOrderTraversal_recursive(root);
     cout << endl;

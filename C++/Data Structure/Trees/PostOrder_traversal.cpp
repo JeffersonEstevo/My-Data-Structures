@@ -90,10 +90,8 @@ void binaryTree::postOrderTraversal_recursive(){
     cout << endl;
 }
 
-void binaryTree::postOrderTraversal_recursive(node *leaf)
-{
-    if (leaf != NULL)
-    {
+void binaryTree::postOrderTraversal_recursive(node *leaf){
+    if (leaf != NULL){
         postOrderTraversal_recursive(leaf->left);
         postOrderTraversal_recursive(leaf->right);
         cout << leaf->key_value << " ";

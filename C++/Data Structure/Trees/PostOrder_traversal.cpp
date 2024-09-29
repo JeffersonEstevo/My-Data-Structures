@@ -99,8 +99,7 @@ void binaryTree::postOrderTraversal_recursive(node *leaf){
 }
 
 // Iterative Post-Order Traversal
-void binaryTree::postOrderTraversal_iterative()
-{
+void binaryTree::postOrderTraversal_iterative(){
     cout << "PostOrderTraversal (iterative): ";
     if (root == NULL)
         return;
@@ -109,23 +108,18 @@ void binaryTree::postOrderTraversal_iterative()
     node *currentNode = root;
     node *lastNodeVisited = NULL;
 
-    while (!nodeAddr.empty() || currentNode != NULL)
-    {
-        if (currentNode != NULL)
-        {
+    while (!nodeAddr.empty() || currentNode != NULL){
+        if (currentNode != NULL){
             nodeAddr.push(currentNode);
             currentNode = currentNode->left;
         }
-        else
-        {
+        else{
             node *topNode = nodeAddr.top();
 
-            if (topNode->right != NULL && lastNodeVisited != topNode->right)
-            {
+            if (topNode->right != NULL && lastNodeVisited != topNode->right){
                 currentNode = topNode->right;
             }
-            else
-            {
+            else{
                 cout << topNode->key_value << " ";
                 lastNodeVisited = topNode;
                 nodeAddr.pop();

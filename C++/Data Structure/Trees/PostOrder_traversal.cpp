@@ -30,11 +30,9 @@ binaryTree::binaryTree(){
 }
 
 // Accepts a vector and calls insertKey(int) iteratively.
-void binaryTree::insertKeys(vector<int> keys)
-{
+void binaryTree::insertKeys(vector<int> keys){
     int len = keys.size();
-    for (int i = 0; i < len; i++)
-    {
+    for (int i = 0; i < len; i++){
         insertKey(keys[i]);
     }
 }

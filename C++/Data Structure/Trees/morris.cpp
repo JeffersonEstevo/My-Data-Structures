@@ -8,8 +8,7 @@ struct Node {
 using namespace std;
 class Solution {
 public:
-    vector<int> inOrder(Node* root)
-    {
+    vector<int> inOrder(Node* root){
         Node*cur=root;
         vector<int>v;
         //code here

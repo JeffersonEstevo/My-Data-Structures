@@ -29,6 +29,7 @@ public:
             if(ptr->left) q.push({ptr->left,{vert-1,lev+1}});
             if(ptr->right) q.push({ptr->right,{vert+1,lev+1}});
         }
+        
         vector<vector<int>>ans;
         for(auto i:mp){
             vector<int>v;

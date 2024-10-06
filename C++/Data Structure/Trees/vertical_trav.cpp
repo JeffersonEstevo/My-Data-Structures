@@ -20,6 +20,7 @@ public:
         map<int,map<int,multiset<int>>>mp;
         queue<pair<TreeNode*,pair<int,int>>>q; // node val, vert level;
         q.push({root,{0,0}});
+        
         while(!q.empty()){
             auto a=q.front(); // 3,0,0
             q.pop();

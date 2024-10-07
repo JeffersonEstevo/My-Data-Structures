@@ -36,11 +36,9 @@ class Trie{
     }
 };
 
-int countDistinctSubstrings(string &s)
-{
+int countDistinctSubstrings(string &s){
     Trie trie;
-    for(int i=0;i<s.size();i++)
-    {
+    for(int i=0;i<s.size();i++){
         string word = s.substr(i);
         trie.insert(word);
     }

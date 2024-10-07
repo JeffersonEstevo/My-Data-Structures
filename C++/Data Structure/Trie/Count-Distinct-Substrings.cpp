@@ -25,8 +25,7 @@ class Trie{
     void insert(string &s){
         node *curr = root;
         for(char c : s){
-            if(!curr->contains(c))
-            {
+            if(!curr->contains(c)){
                 curr->arr[c - 'a'] = new node();
 //                 if inserting new substring, increment the count
                 count++;

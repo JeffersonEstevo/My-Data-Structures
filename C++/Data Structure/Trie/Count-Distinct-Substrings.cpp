@@ -9,8 +9,7 @@ struct node{
         for(int i=0;i<26;i++)
             arr[i] = nullptr;
     }
-    bool contains(char c)
-    {
+    bool contains(char c){
         return arr[c - 'a'] != nullptr;
     }
 };

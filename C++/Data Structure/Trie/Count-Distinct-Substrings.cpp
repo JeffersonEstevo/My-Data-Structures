@@ -18,8 +18,7 @@ class Trie{
     private : node *root;
     public :
     int count;
-    Trie()
-    {
+    Trie(){
         count = 1;
         root = new node();
     }

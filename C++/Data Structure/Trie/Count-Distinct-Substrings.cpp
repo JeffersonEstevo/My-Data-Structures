@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-struct node
-{
+struct node{
     node *arr[26];
     bool end;
     node()

@@ -24,8 +24,7 @@ class Trie{
     }
     void insert(string &s){
         node *curr = root;
-        for(char c : s)
-        {
+        for(char c : s){
             if(!curr->contains(c))
             {
                 curr->arr[c - 'a'] = new node();

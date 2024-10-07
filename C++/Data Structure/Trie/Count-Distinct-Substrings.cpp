@@ -22,8 +22,7 @@ class Trie{
         count = 1;
         root = new node();
     }
-    void insert(string &s)
-    {
+    void insert(string &s){
         node *curr = root;
         for(char c : s)
         {

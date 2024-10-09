@@ -19,26 +19,21 @@ struct node{
 class Trie{
     private : node *root;
     public :
-    Trie()
-    {
+    Trie(){
         root = new node();
     }
-    void insert(string &a)
-    {
+    void insert(string &a){
         node *curr = root;
-        for(char c : a)
-        {
+        for(char c : a){
             if(!curr->contains(c))
                 curr->arr[c - 'a'] = new node();
             curr = curr->arr[c - 'a'];
         }
        curr->end = true;
     }
-    bool search(string &a)
-    {
+    bool search(string &a){
         node *curr = root;
-        for(char c : a)
-        {
+        for(char c : a){
             if(!curr->contains(c))
                 return false;
             

@@ -55,17 +55,13 @@ class Trie{
 string completeString(int n, vector<string> &a){
     // Write your code here.
     Trie t;
-    for(string &word : a)
-    {
+    for(string &word : a){
         t.insert(word);
     }
     string ans = "";
-    for(string &word : a)
-    {
-        if(t.search(word))
-        {
-            if(word.size() > ans.size())
-            {
+    for(string &word : a){
+        if(t.search(word)){
+            if(word.size() > ans.size()){
                 ans = word;
             }
             else if(word.size() == ans.size() && word < ans)

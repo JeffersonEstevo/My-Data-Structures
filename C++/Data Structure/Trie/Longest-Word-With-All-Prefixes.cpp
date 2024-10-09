@@ -22,6 +22,7 @@ class Trie{
     Trie(){
         root = new node();
     }
+
     void insert(string &a){
         node *curr = root;
         for(char c : a){
@@ -31,6 +32,7 @@ class Trie{
         }
        curr->end = true;
     }
+
     bool search(string &a){
         node *curr = root;
         for(char c : a){
@@ -55,10 +57,13 @@ class Trie{
 string completeString(int n, vector<string> &a){
     // Write your code here.
     Trie t;
+    
     for(string &word : a){
         t.insert(word);
     }
+    
     string ans = "";
+    
     for(string &word : a){
         if(t.search(word)){
             if(word.size() > ans.size()){

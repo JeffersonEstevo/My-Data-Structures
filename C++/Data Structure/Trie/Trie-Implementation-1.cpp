@@ -76,8 +76,7 @@ class Trie{
     }
 };
 
-int main()
-{
+int main(){
     Trie t;
 
     string s = "apple";

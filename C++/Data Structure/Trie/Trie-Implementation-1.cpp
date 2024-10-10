@@ -16,8 +16,7 @@ using namespace std;
 struct node{
     node *arr[26];
     bool end;
-    node()
-    {
+    node(){
         end = false;
         for(int i=0;i<26;i++)
         {

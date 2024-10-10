@@ -33,8 +33,7 @@ struct node{
 // 2. Search : search the current word in the trie : TC : O(N)
 // 3. isPrefix : to search whether the current word has some prefix maching in the trie : TC : O(N)
 
-class Trie
-{
+class Trie{
     private : node *root;
 
     public:

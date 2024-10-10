@@ -53,11 +53,9 @@ class Trie{
         curr->end = true; // marking end as true to represent the end of word
     }
 
-    bool search(string &s)
-    {
+    bool search(string &s){
         node *curr = root;
-        for(char c : s)
-        {
+        for(char c : s){
             if(!curr->contains(c))
             return false;
 
@@ -66,11 +64,9 @@ class Trie{
         return curr->end; // if the end is marked true, means the end of word, i.e., word matched
     }
 
-    bool isPrefix(string &s)
-    {
+    bool isPrefix(string &s){
         node *curr = root;
-        for(char c : s)
-        {
+        for(char c : s){
             if(!curr->contains(c))
             return false;
 

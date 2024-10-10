@@ -18,8 +18,7 @@ struct node{
     bool end;
     node(){
         end = false;
-        for(int i=0;i<26;i++)
-        {
+        for(int i=0;i<26;i++){
             arr[i] = nullptr;
         }
     }

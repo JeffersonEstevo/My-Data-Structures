@@ -37,16 +37,13 @@ class Trie{
     private : node *root;
 
     public:
-    Trie()
-    {
+    Trie(){
         root = new node();
     }
 
-    void insert(string &s)
-    {
+    void insert(string &s){
         node *curr = root; // we use the previously appered prefixes in the trie to add new words, same prefixes are not repeated again and again
-        for(char c : s)
-        {
+        for(char c : s){
             if(!curr->contains(c))
             // creating new nodes and moving to next pointer
             curr->arr[c - 'a'] = new node();

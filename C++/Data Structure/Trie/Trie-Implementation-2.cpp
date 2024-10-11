@@ -66,11 +66,9 @@ class Trie{
         return curr->prefCount; // returning the number of words whose prefixes are matching
     }
 
-    void erase(string &word)
-    {
+    void erase(string &word){
         node *curr = root;
-        for(char c : word)
-        {
+        for(char c : word){
             if(!curr->contains(c))
                 return;
             

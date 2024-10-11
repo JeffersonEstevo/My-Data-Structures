@@ -13,8 +13,7 @@ struct node{
     int endCount; // to count the words which are matching exactly same
     int prefCount; // to count the words whose prefixes are matching
     
-    node()
-    {
+    node(){
         endCount = prefCount = 0;
         for(int i=0;i<26;i++)
             arr[i] = nullptr;

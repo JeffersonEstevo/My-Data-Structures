@@ -28,8 +28,7 @@ class Trie{
     private : node *root;
     public:
 
-    Trie()
-    {
+    Trie(){
         root = new node();
     }
 

@@ -24,8 +24,7 @@ struct node{
     }
 };
 
-class Trie
-{
+class Trie{
     private : node *root;
     public:
 

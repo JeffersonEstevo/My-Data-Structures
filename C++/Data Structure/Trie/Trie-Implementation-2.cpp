@@ -34,8 +34,7 @@ class Trie{
 
     void insert(string &word){
         node *curr = root;
-        for(char c : word)
-        {
+        for(char c : word){
             if(!curr->contains(c))
                 curr->arr[c - 'a'] = new node();
             

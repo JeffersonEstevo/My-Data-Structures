@@ -32,8 +32,7 @@ class Trie{
         root = new node();
     }
 
-    void insert(string &word)
-    {
+    void insert(string &word){
         node *curr = root;
         for(char c : word)
         {

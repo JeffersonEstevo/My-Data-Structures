@@ -55,11 +55,9 @@ class Trie{
         return curr->endCount; // returning the number of words which are exactly matching
     }
 
-    int countWordsStartingWith(string &word)
-    {
+    int countWordsStartingWith(string &word){
         node *curr = root;
-        for(char c : word)
-        {
+        for(char c : word){
             if(!curr->contains(c))
                 return 0;
             

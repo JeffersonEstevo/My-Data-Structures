@@ -44,11 +44,9 @@ class Trie{
         curr->endCount++; // incrementing the complete words count
     }
 
-    int countWordsEqualTo(string &word)
-    {
+    int countWordsEqualTo(string &word){
         node *curr = root;
-        for(char c : word)
-        {
+        for(char c : word){
             if(!curr->contains(c))
                 return 0;
             

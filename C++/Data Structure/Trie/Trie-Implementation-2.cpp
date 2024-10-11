@@ -8,8 +8,7 @@ using namespace std;
 // 3. TO ERASE THE GIVEN WORDS FROM OUR DICTIONARY 
 // ************************************************************************************
 
-struct node
-{
+struct node{
     node *arr[26];
     int endCount; // to count the words which are matching exactly same
     int prefCount; // to count the words whose prefixes are matching

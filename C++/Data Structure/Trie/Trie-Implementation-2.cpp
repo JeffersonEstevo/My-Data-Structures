@@ -19,8 +19,7 @@ struct node{
             arr[i] = nullptr;
     }
     
-    bool contains(char &c)
-    {
+    bool contains(char &c){
         return arr[c - 'a'] != nullptr;
     }
 };

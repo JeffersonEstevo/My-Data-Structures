@@ -44,6 +44,10 @@ output:
 
 using namespace std;
 
+
+
+
+
 class Tree{
 	int n;// number of nodes
 	list<int> *adj;

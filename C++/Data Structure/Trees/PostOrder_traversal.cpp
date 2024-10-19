@@ -29,6 +29,8 @@ binaryTree::binaryTree(){
     root = NULL;
 }
 
+
+
 // Accepts a vector and calls insertKey(int) iteratively.
 void binaryTree::insertKeys(vector<int> keys){
     int len = keys.size();

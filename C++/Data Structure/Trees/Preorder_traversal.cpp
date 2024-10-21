@@ -10,6 +10,8 @@ struct node{
     node* right;    // address of its right child
 };
 
+
+
 class binaryTree{
     private:
         node* root;

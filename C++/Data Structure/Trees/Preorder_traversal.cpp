@@ -11,7 +11,6 @@ struct node{
 };
 
 
-
 class binaryTree{
     private:
         node* root;

@@ -19,7 +19,6 @@
 
 
 
-
 using namespace std;
 
 typedef struct FenwickTree {

@@ -18,7 +18,6 @@
 #include <vector>
 
 
-
 using namespace std;
 
 typedef struct FenwickTree {

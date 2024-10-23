@@ -8,7 +8,6 @@ struct Node {
 #include<bits/stdc++.h>
 using namespace std;
 
-
 class Solution {
 public:
     vector<int> inOrder(Node* root){

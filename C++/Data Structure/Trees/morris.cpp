@@ -5,8 +5,6 @@ struct Node {
     Node* right;
 };*/
 
-
-
 #include<bits/stdc++.h>
 using namespace std;
 

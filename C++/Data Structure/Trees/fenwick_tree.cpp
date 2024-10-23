@@ -20,7 +20,6 @@
 using namespace std;
 
 
-
 typedef struct FenwickTree {
     int size;
     vector<int> tree;

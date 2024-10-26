@@ -5,7 +5,6 @@ using namespace std;
 
 
 
-
 struct node{
     node *arr[26];
     bool end;

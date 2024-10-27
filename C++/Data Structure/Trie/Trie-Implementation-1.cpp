@@ -14,7 +14,6 @@ using namespace std;
 // each node will have an end : if the end is marked true, means it is the end of the current word 
 
 
-
 struct node{
     node *arr[26];
     bool end;

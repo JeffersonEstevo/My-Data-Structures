@@ -10,7 +10,6 @@ using namespace std;
 
 
 
-
 struct node{
     node *arr[26];
     int endCount; // to count the words which are matching exactly same

@@ -54,7 +54,7 @@ int main(){
 	
  	test.clear();                       // remove all the elements of the vector container
  	
- 	cout<<"Is vector empty: " << is_vector_empty(test) << endl;
+ 	cout << "Is vector empty: " << is_vector_empty(test) << endl;
 	
 	return 0;
 }

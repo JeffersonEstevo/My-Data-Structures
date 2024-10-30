@@ -5,10 +5,8 @@ using namespace std;
 
 /*Vectors are same as dynamic arrays with the ability to resize itself 
 automatically when an element is inserted or deleted*/
-void iterate_over_vector(auto start,auto end)
-{
-	for(auto i=start;i!=end;i++)
-	{
+void iterate_over_vector(auto start,auto end){
+	for(auto i=start;i!=end;i++){
 		cout<<*i<<" ";
 	}
 	cout<<endl;

@@ -11,8 +11,8 @@ void iterate_over_vector(auto start,auto end){
 	}
 	cout<<endl;
 }
-void insert_element(vector <int> &test,auto pos,int value)
-{
+
+void insert_element(vector <int> &test,auto pos,int value){
 	// O(n+m)
 	test.insert(pos,value);  
 }

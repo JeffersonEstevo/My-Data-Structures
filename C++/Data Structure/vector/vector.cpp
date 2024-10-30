@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+
 /*Vectors are same as dynamic arrays with the ability to resize itself 
 automatically when an element is inserted or deleted*/
 void iterate_over_vector(auto start,auto end)
@@ -35,8 +36,8 @@ int main()
 	test.push_back(8);              //	Vector elements are placed in contiguous storage.
 	test.push_back(1);				//	O(1)							
 	/*   Iterate over vector
-		begin() – Returns an iterator pointing to the first element in the vector
-		end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector  */
+		begin() â€“ Returns an iterator pointing to the first element in the vector
+		end() â€“ Returns an iterator pointing to the theoretical element that follows the last element in the vector  */
 		
 	cout<<"Initial vector: ";
 	iterate_over_vector(test.begin(),test.end());        

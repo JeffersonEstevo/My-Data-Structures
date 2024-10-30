@@ -6,8 +6,8 @@ using namespace std;
 /*Vectors are same as dynamic arrays with the ability to resize itself 
 automatically when an element is inserted or deleted*/
 void iterate_over_vector(auto start, auto end){
-	for(auto i=start; i != end; i++){
-		cout<< *i << " ";
+	for(auto i=start; i!=end; i++){
+		cout << *i << " ";
 	}
 	cout<<endl;
 }
@@ -36,25 +36,25 @@ int main(){
 		begin() – Returns an iterator pointing to the first element in the vector
 		end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector  */
 		
-	cout<<"Initial vector: ";
-	iterate_over_vector(test.begin(),test.end());        
-	cout<<"Size of vector: "<<test.size()<<endl;
+	cout << "Initial vector: ";
+	iterate_over_vector(test.begin(), test.end());        
+	cout << "Size of vector: " << test.size() << endl;
 	
-	insert_element(test,test.begin()+2,5);              //insert element at given iterator	
-	cout<<"vector after insertion: ";                  	
-	iterate_over_vector(test.begin(),test.end());
-	cout<<"Size of vector: "<<test.size()<<endl;
+	insert_element(test, test.begin() + 2, 5);              //insert element at given iterator	
+	cout << "vector after insertion: ";                  	
+	iterate_over_vector(test.begin(), test.end());
+	cout << "Size of vector: " << test.size() << endl;
 	test.pop_back();                                    //delete last element
-	erase_element(test,test.begin()+1);                 //erase element at given iterator
+	erase_element(test, test.begin() + 1);                 //erase element at given iterator
 	
-	cout<<"vector after erasing some elements: ";
-	iterate_over_vector(test.begin(),test.end());
-	cout<<"Size of vector: "<<test.size()<<endl;
-	cout<<"Is vector empty: "<<is_vector_empty(test)<<endl;
+	cout << "vector after erasing some elements: ";
+	iterate_over_vector(test.begin(), test.end());
+	cout << "Size of vector: " << test.size() << endl;
+	cout << "Is vector empty: " << is_vector_empty(test) << endl;
 	
  	test.clear();                       // remove all the elements of the vector container
  	
- 	cout<<"Is vector empty: "<<is_vector_empty(test)<<endl;
+ 	cout<<"Is vector empty: " << is_vector_empty(test) << endl;
 	
 	return 0;
 }

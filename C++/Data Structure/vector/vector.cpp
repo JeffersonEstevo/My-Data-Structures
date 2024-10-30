@@ -17,18 +17,16 @@ void insert_element(vector <int> &test, auto pos, int value){
 	test.insert(pos, value);  
 }
 
-void erase_element(vector <int> &test,auto pos)
-{
+void erase_element(vector <int> &test, auto pos){
 	//  O(n)
 	test.erase(pos);  
 }
-bool is_vector_empty(vector <int> &test)
-{
+
+bool is_vector_empty(vector <int> &test){
 	return test.empty();
 }
 
-int main()
-{
+int main(){
 	vector <int> test;
 	test.push_back(5);              // 	add 5 at the end    O(1)
 	test.push_back(4);              // 	added 4 after 5      O(1)

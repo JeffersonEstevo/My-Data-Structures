@@ -25,6 +25,7 @@ bool fun(string &pattern, string &text, int i, int j){
         return fun(pattern, text, i - 1, j) or fun(pattern, text, i, j - 1);  //first function symbolizes if the * has more than 1 characters
     return false;                                                             //second function symbolizes if the * has only 1 character  
 }
+
 bool wildcardMatching(string pattern, string text)
 {
     // Write your code here.

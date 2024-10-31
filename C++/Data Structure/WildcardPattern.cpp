@@ -7,14 +7,12 @@ to string s2 containing only characters,*/
 using namespace std;
 
 //Done with the help of recursion  
-bool fun(string &pattern, string &text, int i, int j)
-{
+bool fun(string &pattern, string &text, int i, int j){
     if (i < 0 && j < 0)  //(Base Case)      //T.C-: O(length of string s2*length of string s2)
         return true;    //(Base Case)      //S.C-: O(length of string s2*length of string s2 + auxilliary stack space of string s1 and s2)
     if (i < 0 && j >= 0)
         return false;
-    if (j < 0 && i >= 0)
-    {
+    if (j < 0 && i >= 0){
         for (int i1 = 0; i1 <= i; i1++)
         {
             if (pattern[i1] != '*')  //for the edge case if string s2 empty and s1 contains only *

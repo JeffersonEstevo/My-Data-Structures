@@ -13,8 +13,7 @@ bool fun(string &pattern, string &text, int i, int j){
     if (i < 0 && j >= 0)
         return false;
     if (j < 0 && i >= 0){
-        for (int i1 = 0; i1 <= i; i1++)
-        {
+        for (int i1 = 0; i1 <= i; i1++){
             if (pattern[i1] != '*')  //for the edge case if string s2 empty and s1 contains only *
                 return false;
         }

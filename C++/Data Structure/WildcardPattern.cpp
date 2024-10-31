@@ -3,7 +3,6 @@ to string s2 containing only characters,*/
 // * can contain characters ranging from 0 to size of string
 // ? can contain single string
 
-
 #include<bits/stdc++.h>
 using namespace std;
 

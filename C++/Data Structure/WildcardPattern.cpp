@@ -26,13 +26,13 @@ bool fun(string &pattern, string &text, int i, int j){
     return false;                                                             //second function symbolizes if the * has only 1 character  
 }
 
-bool wildcardMatching(string pattern, string text)
-{
+bool wildcardMatching(string pattern, string text){
     // Write your code here.
     int n = pattern.length();
     int m = text.length();
     return fun(pattern, text, n, m);  //calling function
 }
+
 int main()               //Main Function
 {
     string s;

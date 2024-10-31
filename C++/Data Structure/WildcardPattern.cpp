@@ -33,8 +33,7 @@ bool wildcardMatching(string pattern, string text){
     return fun(pattern, text, n, m);  //calling function
 }
 
-int main()               //Main Function
-{
+int main(){               //Main Function
     string s;
     cin >> s;
     string s1;

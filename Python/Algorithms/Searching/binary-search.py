@@ -15,7 +15,6 @@ Average Case O(log n)
 Worst Case O(log n)
 """
 
-
 def binarySearch(arr, target):
     l = len(arr) - 1
     start,end = 0,l 

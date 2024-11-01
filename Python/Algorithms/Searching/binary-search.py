@@ -18,8 +18,7 @@ Worst Case O(log n)
 
 
 
-
-def binarySearch(arr,target):
+def binarySearch(arr, target):
     l = len(arr) - 1
     start,end = 0,l 
     mid = (start+end)//2 

@@ -14,7 +14,6 @@ Worst Case: O(n)
 """
 
 
-
 def linearSearch(arr, target):
     for i in range(len(arr)): # traversing the list
         if arr[i] == target: # comparing the list element with the target value

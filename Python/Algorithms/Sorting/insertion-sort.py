@@ -22,7 +22,6 @@ Worst Case: O(n*n)
 
 
 
-
 def insertion_sort(arr):
 	for i in range(0,len(arr)):
 		temp = arr[i]

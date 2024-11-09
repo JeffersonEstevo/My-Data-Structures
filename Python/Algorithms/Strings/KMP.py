@@ -7,6 +7,12 @@ the pattern) of the pattern and improves the worst case complexity to O(n). The 
 whenever we detect a mismatch (after some matches), we already know some of the characters in the text of the next window. 
 We take advantage of this information to avoid matching the characters that we know will anyway match. 
 """
+
+
+
+
+
+
 def shiftTable(s):
     shiftT = [0] * (len(s))
     index = 0

@@ -11,7 +11,6 @@ We take advantage of this information to avoid matching the characters that we k
 
 
 
-
 def shiftTable(s):
     shiftT = [0] * (len(s))
     index = 0

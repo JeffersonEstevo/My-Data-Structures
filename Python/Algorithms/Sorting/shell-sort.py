@@ -11,7 +11,6 @@ Time Complexity:  O(n**3/2)
 
 
 
-
 def shell_sort(arr):
     n = len(arr)
     h = 1

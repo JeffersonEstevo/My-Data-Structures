@@ -5,7 +5,6 @@ Kadane’s algorithm is a Dynamic Programming approach to solve “the largest c
 
 
 
-
 def maxSubArray(nums):
     if len(nums) == 0:
         return 0

@@ -2,7 +2,6 @@
 Kadane’s algorithm is a Dynamic Programming approach to solve “the largest contiguous elements in an array” with runtime of O(n).
 """
 
-
 def maxSubArray(nums):
     if len(nums) == 0:
         return 0

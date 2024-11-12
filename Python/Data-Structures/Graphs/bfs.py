@@ -21,7 +21,6 @@ As the name BFS suggests, you are required to traverse the graph breadthwise as 
 
 
 
-
 def bfs(graph, root):
     visited, queue = set(), [root]
     visited.add(root)

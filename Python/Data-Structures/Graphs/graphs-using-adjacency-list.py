@@ -77,7 +77,9 @@ g.addEdge(3,5,3)
 g.addEdge(4,0,1)
 g.addEdge(5,4,8)
 g.addEdge(5,2,1)
+
 print(g.getVertices())
+
 for v in g.vertList.values():
     for w in v.getConnections():
         print("( %s , %s )" % (v.getId(), w.getId()))

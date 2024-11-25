@@ -1,3 +1,4 @@
+
 class Stack:
     arr = []
     def push(self,item):

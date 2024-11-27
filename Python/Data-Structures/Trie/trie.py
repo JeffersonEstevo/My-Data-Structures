@@ -16,6 +16,7 @@ So, the insertion of any string into a Trie starts from the root node. All prefi
 In addition, all prefixes of length 2 become children of the nodes existing at level one.
 """
 
+
 class Trie:
 
     def __init__(self):

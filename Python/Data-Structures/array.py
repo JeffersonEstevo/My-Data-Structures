@@ -2,6 +2,7 @@ import array
 
 class myArray:
     def newArray(self, ar_type):
+    
         self.arr = array.array(ar_type, []) # new array created
         
     def append(self,val):

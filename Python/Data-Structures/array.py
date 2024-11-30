@@ -1,4 +1,3 @@
-
 import array
 
 class myArray:

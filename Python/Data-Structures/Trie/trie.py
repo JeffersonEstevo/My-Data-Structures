@@ -17,7 +17,6 @@ In addition, all prefixes of length 2 become children of the nodes existing at l
 """
 
 class Trie:
-
     def __init__(self):
         self.dic = {}
 

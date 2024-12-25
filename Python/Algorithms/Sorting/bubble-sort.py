@@ -48,7 +48,6 @@ def optimizedBubbleSort(arr):
 # Worst and Average Case Time Complexity: O(n*n). 
 # Best Case Time Complexity: O(n).
 
-
 #example
 a = [1,2,4,5,8]
 print(*bubbleSort(a))

@@ -8,6 +8,7 @@ whenever we detect a mismatch (after some matches), we already know some of the 
 We take advantage of this information to avoid matching the characters that we know will anyway match. 
 """
 
+
 def shiftTable(s):
     shiftT = [0] * (len(s))
     index = 0

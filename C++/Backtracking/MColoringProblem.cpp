@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 
+
 using namespace std;
 bool check(int node, int color[], bool graph[101][101], int n, int col) {
   for (int k = 0; k < n; k++) {
